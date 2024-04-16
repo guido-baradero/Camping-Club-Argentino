@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CCA-estilos/estilo.css">
+    <title>Camping Club Argentino</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="nombre">Camping Club Argentino</h1>
+        <nav>
+            <div>
+                <ul class="navegacion">
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="./destinos.html">DESTINOS</a></li>
+                    <li><a href="./consejos.html">CONSEJOS</a></li>
+                    <li><a href="./motorhome.html">MOTORHOME</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="formulario">
+            <div class="columna izquierda">
+                <h2>Comunicate con nosotros</h2>
+                <p><strong>Direccion:</strong> Calle, Ciudad, País</p>
+                <p><strong>Telefono:</strong> 123456789</p>
+                <p><strong>Mail:</strong> info@campingclub.com</p>
+            </div>
+            <div class="columna derecha">
+                <h2>Formulario de Contacto</h2>
+                <form action="#" method="post">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="campo">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">Mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="actividad">Actividad:</label>
+                        <select id="actividad" name="actividad" required>
+                            <option value="">Elige una opcion</option>
+                            <option value="Viajero">Viajero</option>
+                            <option value="Turista">Turista</option>
+                            <option value="Explorador">Explorador</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="motorhome">¿Tenes motorhome?</label>
+                        <input type="checkbox" id="motorhome" name="motorhome">
+                    </div>
+                    <div class="campo">
+                        <label for="acampante">¿Sos un acampante habitual?</label>
+                        <input type="checkbox" id="acampante" name="acampante">
+                    </div>
+                    <div class="campo">
+                        <label for="comentario">Comentario:</label>
+                        <textarea id="comentario" name="comentario"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h1 class="nombre">Camping Club Argentino</h1>
+        <div class="redes-sociales">
+            <img src="../CCA-imagenes/instagram.jpg" alt="logo instagram">
+            <img src="../CCA-imagenes/x.png" alt="logo x">
+            <img src="../CCA-imagenes/whatsapp.png" alt="logo whatsapp">
+            <img src="../CCA-imagenes/facebook.png" alt="logo facebook">
+        </div>
+    </footer>
+
+</body>
+
+</html>
