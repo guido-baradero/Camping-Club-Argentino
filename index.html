@@ -3,149 +3,137 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cca-estilos/estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/estilo.css">
+
     <title>Camping Club Argentino</title>
+
 </head>
 
 <body>
+    <div class="contenedor">
 
-    <header>
-        <h1 class="nombre">Camping Club Argentino</h1>
-        <nav>
-            <div>
-                <ul class="navegacion">
+        <header class="header">
+            <h1>Camping Club Argentino</h1>
+            <div class="logo">
+                <img src="./img/estilo/icono.png" alt="Logo de Camping Club Argentino">
+            </div>
+            <nav class="menu">
+                <ul>
                     <li><a href="./index.html">INICIO</a></li>
-                    <li><a href="./CCA-pages/destinos.html">DESTINOS</a></li>
-                    <li><a href="./CCA-pages/consejos.html">CONSEJOS</a></li>
-                    <li><a href="./CCA-pages/motorhome.html">MOTORHOME</a></li>
-                    <li><a href="./CCA-pages/contacto.html">CONTACTO</a></li>
+                    <li><a href="./pages/destinos.html">DESTINOS</a></li>
+                    <li><a href="./pages/consejos.html">CONSEJOS</a></li>
+                    <li><a href="./pages/motorhome.html">MOTORHOME</a></li>
+                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
                 </ul>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <main>
-        <article>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./CCA-imagenes/carrusel5.jpg" class="d-block w-100" alt="Imagen de camping">
+        <main class="main">
+            <article>
+                <div class="principal">
+
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/carrusel3.jpg" class="d-block w-100" alt="Imagen de camping">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/carrusel.jpg" class="d-block w-100" alt="imagen de camping">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/carrusel5.jpg" class="d-block w-100" alt="imagen">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./CCA-imagenes/carrusel.jpg" class="d-block w-100" alt="imagen de camping">
+
+                </div>
+                <h2>¿Que sómos?</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, ratione. Aspernatur sunt
+                    exercitationem aliquid quam hic nesciunt qui ducimus blanditiis voluptas, dicta, expedita eligendi,
+                    asperiores molestias totam delectus? Neque, suscipit aperiam amet tempore tenetur quod, assumenda
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam nostrum repellat saepe quam
+                    repudiandae eius ullam esse vitae, aperiam harum illum magni expedita dicta, ipsam omnis aliquid
+                    consequuntur quod!</p>
+            </article>
+        </main>
+
+        <aside class="aside">
+
+            <div class="aside1">
+                <h5>¡Suscribite!</h5>
+                <p>Vas acceder a descuentos, promociones y mas...!</p>
+            </div>
+
+            <div class="aside1">
+                <h5>¿A donde vamos este finde?</h5>
+                <nav class="nav-destinos">
+                    <ul>
+                        <li><a href="./pages/destinos/rio.html">A la orilla del rio</a></li>
+                        <li><a href="./pages/destinos/sierras.html">Sierras cordobezas</a></li>
+                        <li><a href="./pages/destinos/montañas.html">Altura de montaña</a></li>
+                        <li><a href="./pages/destinos/mar.html">Aire de mar</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="aside1">
+                <h5>Los mas economicos</h5>
+                <div class="tag">
+                    <a href=""><img src="./img/camping/campin-rio1.jpg" alt="camping frente al rio"></a>
+                    <h5>Concepcion del Uruguay - Entre Rios</h5>
+                </div>
+            </div>
+
+        </aside>
+
+        <footer>
+            <div class="container footer">
+
+                <div class="row">
+                    <div class="nombre col-3">
+                        <h2>Camping Club Argentino</h2>
+                        <div class="logo">
+                            <img src="./img/estilo/icono.png" alt="LOGO">
+                        </div>
+                        <p>Todos los derechos restringidos</p>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./CCA-imagenes/carrusel3.jpg" class="d-block w-100" alt="imagen">
+
+                    <div class="col-6">
+                        <nav class="nav-destinos">
+                            <ul>
+                                <li><a href="../cca-pages/destinos/rio.html">A la orilla del rio</a></li>
+                                <li><a href="../cca-pages/destinos/mar.html">Sierras cordobezas</a></li>
+                                <li><a href="../cca-pages/destinos/sierras.html">Altura de montaña</a></li>
+                                <li><a href="../cca-pages/destinos/montañas.html">Aire de mar</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="redes-sociales col-3">
+                        <a href=""><img class="redes" src="./img/redes-sociales/facebook.png" alt="logo facebook"></a>
+                        <a href=""><img class="redes" src="./img/redes-sociales/instagram.jpg" alt="logo Instagram"></a>
+                        <a href=""><img class="redes" src="./img/redes-sociales/x.png" alt="logo X"></a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </article>
+        </footer>
 
-        <article>
-            <div>
-                <h3>Destinos destacados</h3>
-            </div>
-            <div class="destinos-destacados">
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-rio.jpg" alt="camping frente al rio">
-                    <h4>Concepcion del Uruguay - Entre Rios</h4>
-                </div>
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-rio1.jpg" alt="camping en el rio">
-                    <h4>Ramallo - Prov. de Buenos Aires</h4>
-                </div>
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-rio2.jpg" alt="camping fernte al rio">
-                    <h4>Sierra de la Ventana - Prov. de Buenos Aires</h4>
-                </div>
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-rio3.jpg" alt="camping fente al rio">
-                    <h4>Tandil - Prov. de Buenos Aires</h4>
-                </div>
-            </div>
-
-            <div class="destinos-destacados">
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-mar.jpg" alt="camping">
-                    <h4>Mar Azul - Prov. de Buenos Aires</h4>
-                </div>
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-mar1.jpg" alt="camping">
-                    <h4>Las Grutas - Rio Negro</h4>
-                </div>
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-mar2.jpg" alt="camping">
-                    <h4>Claromeco - Prov de Buenos Aires</h4>
-                </div>
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-mar3.jpg" alt="camping">
-                    <h4>Villa Gesell - Prov. de Buenos Aires</h4>
-                </div>
-            </div>
-
-            <div class="destinos-destacados">
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-sierras.jpg" alt="camping">
-                    <h4>Santa Rosa de Calamuchita - Cordoba</h4>
-                </div>
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-sierras1.jpg" alt="camping">
-                    <h4>Mina Clavero - Cordoba</h4>
-                </div>
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-sierras2.jpg" alt="camping">
-                    <h4>Nono - Cordoba</h4>
-                </div>
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-sierras3.jpg" alt="camping">
-                    <h4>Merlo - San Luis</h4>
-                </div>
-            </div>
-
-            <div class="destinos-destacados">
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-montaña.jpg" alt="camping">
-                    <h4>Lujan de Cuyo - Mendoza</h4>
-                </div>
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-montaña1.jpg" alt="camping">
-                    <h4>San Martin de los Andes - Neuquen</h4>
-                </div>
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-montaña2.jpg" alt="camping">
-                    <h4>Valle de la luna - Catamarca</h4>
-                </div>
-                <div class="tag">
-                    <img src="./CCA-imagenes/campin-montaña3.jpg" alt="camping">
-                    <h4>Cacheuta - Mendoza</h4>
-                </div>
-            </div>
-        </article>
-    </main>
-
-    <footer>
-        <h1 class="nombre">Camping Club Argentino</h1>
-        <div class="redes-sociales">
-            <img src="../CCA-imagenes/instagram.jpg" alt="logo instagram">
-            <img src="../CCA-imagenes/x.png" alt="logo x">
-            <img src="../CCA-imagenes/whatsapp.png" alt="logo whatsapp">
-            <img src="../CCA-imagenes/facebook.png" alt="logo facebook">
-        </div>
-    </footer>
-
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
