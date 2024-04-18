@@ -31,22 +31,21 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     grid-area: header;
-
     background-color: #4f6781;
     height: 200px;
     margin-bottom: 50px;
     align-content: space-evenly;
 }
 
-.header .logo img {
-    width: 120px;
-}
-
 .header h1 {
     text-align: left;
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     padding: 27px 0 27px 27px;
     color: white;
+}
+
+.header .logo img {
+    width: 120px;
 }
 
 .header .menu ul {
@@ -59,13 +58,13 @@ body {
     color: #232f3c;
     text-decoration: none;
     padding: 20px 20px 40px 20px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .header .menu a:hover {
     font-weight: bold;
     background-color: #8d8c86;
-    color: bisque;
+    color: white;
     border-radius: 8%;
     padding: auto;
 }
@@ -430,15 +429,13 @@ footer .footer .logo img {
 
 
     body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #90d3bb;
-        background-attachment: fixed;
+        width: 100%;
     }
 
 
     .contenedor {
-        margin: auto;
-        width: 100%;
+        margin: 0px;
+        max-width: 320px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -451,35 +448,24 @@ footer .footer .logo img {
 
 
     .header {
-        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
         grid-area: header;
-
-        background-color: #4f6781;
-        height: 400px;
+        height: 300px;
         padding-bottom: 0px;
         margin-bottom: 0px;
-        align-content: space-evenly;
+
     }
 
     .header h1 {
-        display: flex;
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         padding: 10px;
-        color: white;
-    }
-
-    .header .logo img {
-        width: 120px;
     }
 
     .header .menu ul {
-        list-style-type: none;
-        display: flex;
         justify-content: space-evenly;
         padding: 0px;
         margin: 0px;
@@ -488,16 +474,96 @@ footer .footer .logo img {
 
     .header .menu a {
         color: white;
-        border: #b4a796 1px solid;
+        border: #8d8c86 1px solid;
         background-color: #232f3c;
-        text-decoration: none;
         padding: auto;
         margin: auto;
         font-size: 1rem;
         width: 100%;
     }
 
-    /*------------------aside 768---------------*/
+    /*----------------Main Mobile------------------*/
+
+    .main {
+        background-color: #9df0d3;
+        padding: 1.2rem;
+        grid-area: main;
+    }
+
+
+    .main article h2 {
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+
+    .main article {
+        margin: 0px;
+    }
+
+    .main article p {
+        margin: 20px;
+        font-size: 1.6rem;
+        padding: 1rem;
+        line-height: 1.8rem;
+        text-align: justify;
+    }
+
+    /*-------------CARRUSEL-------------------------*/
+    .carousel {
+        width: 100%;
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+
+    .carousel img {
+        height: 400px;
+        width: 100%;
+        margin: auto;
+    }
+
+
+
+
+    /*-----------------------destacados Mobile---------------*/
+
+    .tag-destacado {
+        flex-direction: column;
+    }
+
+    .tag-destacado h3 {
+        text-align: center;
+    }
+
+    .tag-destacado h5 {
+        font-size: 1.6rem;
+
+        text-align: center;
+    }
+
+    .tag-destacado-izq {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tag-destacado-der {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-destacado {
+        font-size: 1.6rem;
+    }
+
+    .tag-destacado img {
+        width: 100%;
+        border-radius: 5%;
+    }
+
+
+
+    /*------------------aside Mobile---------------*/
 
     .aside {
         margin: 0px;
@@ -505,7 +571,7 @@ footer .footer .logo img {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        background-color: #b4a796;
+        background-color: #8d8c86;
         grid-area: aside;
     }
 
@@ -515,7 +581,7 @@ footer .footer .logo img {
         color: #fff;
         padding: 40px;
         margin: 0;
-        background-color: #8d8c86;
+        background-color: #718dab;
         overflow: auto;
     }
 
@@ -523,6 +589,10 @@ footer .footer .logo img {
         font-size: 1rem;
         line-height: 1.2;
         padding: 10px
+    }
+
+    .aside .aside1 .nav-destinos li {
+        text-align: center;
     }
 
     .aside .aside1 img {
