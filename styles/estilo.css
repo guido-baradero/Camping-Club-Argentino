@@ -1,3 +1,14 @@
+.colores {
+    background-color: rgb(231, 102, 44);
+    background-color: rgb(222, 91, 37);
+    background-color: rgb(77, 173, 171);
+    background-color: rgb(37, 160, 157);
+    background-color: rgb(1, 130, 170);
+    background-color: rgb(0, 119, 149);
+    background-color: rgb(254, 188, 39);
+    background-color: rgb(237, 164, 10);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +18,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(255, 251, 240);
+    background-color: #9f7171;
     background-attachment: fixed;
 }
 
@@ -23,6 +35,7 @@ body {
 }
 
 .contenedor {
+    background-color: #fff;
     margin: 0;
     width: 100%;
     display: grid;
@@ -41,7 +54,17 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     grid-area: header;
-    background-color: #4f6781;
+    border-bottom: #232f3c solid 2px;
+    background-color: rgb(231, 102, 44);
+    background-color: rgb(222, 91, 37);
+    background-color: rgb(77, 173, 171);
+    /*
+    background-color: rgb(37, 160, 157);
+    background-color: rgb(1, 130, 170);
+    background-color: rgb(0, 119, 149);
+    background-color: rgb(254, 188, 39);
+    background-color: rgb(237, 164, 10);
+*/
     height: 200px;
     margin-bottom: 50px;
     justify-content: space-around;
@@ -77,7 +100,7 @@ body {
 
 .header .menu a:hover {
     font-weight: bold;
-    background-color: #8d8c86;
+    background-color: rgb(37, 160, 157);
     color: white;
     border-radius: 8%;
     padding: auto;
@@ -85,6 +108,7 @@ body {
 
 .main {
     background-color: #fff;
+
     padding: 1.2rem;
     padding-top: 0;
     grid-area: main;
@@ -110,33 +134,159 @@ body {
     line-height: 1.8rem;
 }
 
+.texto {
+    font-size: 1.2rem;
+    font-weight: 1 rem;
+}
+
+.texto-secciones h2 {
+    padding-bottom: 50px;
+}
+
+.texto h3 {
+    text-align: center;
+}
+
+.texto-secciones h3 {
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+
+
+/*
+.texto-destinos {
+    display: inline-flex;
+}
+
+.texto-destinos h2 {
+    padding-bottom: 50px;
+}
+
+.texto-destinos h3 {
+    width: 50%;
+    font-size: 1.6rem;
+}
+*/
+
+
+
+/*--------DESTACADOS----------------------*/
+
+.tag-destacado {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+
+    background-color: #90d3bb;
+    border-radius: 2%;
+    border: rgb(222, 91, 37) solid 2px;
+
+}
+
+.tag-destacado h3 {
+    padding: 0 0 0 20px;
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+.tag-destacado img {
+    align-items: flex-start;
+    width: 340px;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.img-tag-destacado {
+    max-width: 500px;
+}
+
+.tag-destacado-izq {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.boton {
+    background-color: rgb(0, 119, 149);
+    color: #90d3bb
+}
+
+.grupo-boton {
+    text-align: center;
+    padding: 20px;
+}
+
+.volver {
+    display: flex;
+}
+
+.boton:hover {
+    background-color: rgb(222, 91, 37);
+    color: #90d3bb;
+}
+
+
+.tag-destacado-der {
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.tag-destacado-der h5 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tabla-caract {
+    display: inline-block;
+}
+
+.tag-destacado-der table tr th {
+    color: #9f7171;
+}
+
+.tabla-caract tr th {
+    background-color: #232f3c;
+    padding: 20px;
+}
+
+.tabla-caract tr td {
+    padding: 20px;
+
+}
+
+
 /*-------------CARRUSEL-------------------------*/
+
 .carousel {
-    width: 1000px;
-    margin: auto;
-    padding-bottom: 100px;
+    width: 100%;
+    max-height: 200px;
+    margin-bottom: 150px;
 }
 
 .carousel img {
-    height: 500px;
-    width: 100%;
-    margin: auto;
+    border-radius: 10%;
+    height: 300px;
 }
 
 
-/*------------------------------------------------
-----------------DESTACADOS----------------------*/
 
+/*
 .tag-destacado {
     display: flex;
     align-items: center;
     gap: 20px;
     margin: auto;
     background-color: #90d3bb;
-    /* 
-    background-image: url("../img/camping/rio-dibujo.jpg");
-    background-size: cover;
-    */
+    border-radius: 2%;
+    border: rgb(222, 91, 37) solid 2px;
+
     padding-top: 0;
 
     flex-wrap: wrap;
@@ -144,7 +294,8 @@ body {
 }
 
 .tag-destacado h3 {
-    width: 100%;
+    padding: 20px 20px 20px 50px;
+
 }
 
 .tag-destacado-izq {
@@ -171,8 +322,9 @@ body {
     align-items: flex-start;
     width: 340px;
     padding: 20px;
+    border-radius: 5%;
 }
-
+*/
 
 .tag-3-destacados {
     margin: 20px 0 20px 0;
@@ -183,24 +335,26 @@ body {
 
 }
 
-.tag-3-destacados .tag-3-camping img {
+.tag-3-camping img {
     width: 300px;
     padding: 20px;
     margin: auto;
+    border-radius: 5%;
 }
 
-.tag-3-destacados .tag-3-camping {
-    border: #232f3c solid 1px;
-
+.tag-3-camping {
+    border-radius: 8%;
+    background-color: #90d3bb;
+    border: rgb(222, 91, 37) solid 1px;
     text-align: center;
     padding-bottom: 20px;
 }
 
-.tag-3-destacados .tag-3-camping p {
+.tag-3-camping p {
     text-align: justify;
 }
 
-.tag-3-destacados .tag-3-camping a {
+.tag-3-camping a {
     list-style-type: none;
     text-decoration: none;
 }
@@ -267,14 +421,14 @@ body {
 .nav-destinos ul a {
     text-decoration: none;
     font-size: 1.3rem;
-    padding: 10px;
-    color: #232f3c
+    padding: 15px;
+    color: black;
 }
 
 .nav-destinos ul a:hover {
     font-weight: bold;
-    background-color: #8d8c86;
-    color: bisque;
+    color: white;
+    font-size: 1.4rem;
 }
 
 /*---------------nav-consejos------------*/
@@ -380,9 +534,24 @@ div.tag-objeto {
     padding: auto;
 }
 */
+.modal-header {
+    background-color: #4f6781;
+}
 
-/*---------------------------------------------
------------------motorhome---------------------*/
+.parrafo-modal {
+    color: black;
+}
+
+
+
+
+/*-------------motorhome---------------------*/
+
+.texto-secciones h4 {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+}
 
 .objetos-tag-motorhome {
     display: inline-block;
@@ -422,8 +591,39 @@ div.tag-objeto {
     padding: auto;
 }
 
+/*----------------contacto--------------*/
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: #9f7171 solid 2px;
+    align-items: center;
+}
+
+.formulario-izq {
+    text-align: center;
+}
+
+.formulario-izq h2 {
+    padding-left: 20px;
+}
+
+.formulario-der {
+    text-align: center;
+    padding: 20px;
+}
+
+.formulario .formulario-der .campo {
+    padding: 20px;
+}
+
+
+
+
 
 /*------------------aside---------------*/
+
+
 
 .aside {
     margin: 0px;
@@ -432,7 +632,9 @@ div.tag-objeto {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: start;
-    background-color: #b4a796;
+    background-color: rgb(254, 188, 39);
+    border-top: #232f3c solid 2px;
+    border-left: #232f3c solid 2px;
     grid-area: aside;
 }
 
@@ -442,7 +644,9 @@ div.tag-objeto {
     color: white;
     padding: 40px;
     margin: 0;
-    background-color: #8d8c86;
+    margin-bottom: 10px;
+    background-color: rgb(237, 164, 10);
+    border-radius: 2%;
 }
 
 .aside .aside1 .nav-destinos li {
@@ -494,10 +698,11 @@ div.tag-objeto {
 .footer {
     width: 100%;
     grid-area: footer;
-    background-color: #4f6781;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: rgb(0, 119, 149);
+    border-top: #232f3c solid 2px;
 
 }
 
@@ -515,6 +720,7 @@ div.tag-objeto {
 
 .footer1 .logo img {
     width: 120px;
+    border-radius: 100%;
 }
 
 .footer1 p {
@@ -557,13 +763,9 @@ div.tag-objeto {
 
 @media only screen and (max-width: 768px) {
 
-
-
-
     body {
         width: 100%;
     }
-
 
     .contenedor {
         margin: 0px;
@@ -577,7 +779,6 @@ div.tag-objeto {
             "aside"
             "footer";
     }
-
 
     .header {
         flex-direction: column;
@@ -656,10 +857,11 @@ div.tag-objeto {
 
 
 
-    /*-----------------------destacados Mobile---------------*/
+    /*------destacados Mobile--------------*/
 
     .tag-destacado {
         flex-direction: column;
+        margin-bottom: 10px;
     }
 
     .tag-destacado h3 {
@@ -678,6 +880,23 @@ div.tag-objeto {
         flex-direction: column;
     }
 
+    .boton {
+        background-color: rgb(0, 119, 149);
+        color: #90d3bb
+    }
+
+    .grupo-boton {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .volver {
+        display: none;
+    }
+
     .tag-destacado-der {
         width: 100%;
         display: flex;
@@ -691,6 +910,16 @@ div.tag-objeto {
     .tag-destacado img {
         width: 100%;
         border-radius: 5%;
+    }
+
+    .tabla-caract {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    .carousel {
+        display: none;
     }
 
     .tag-3-destacados {
@@ -783,6 +1012,19 @@ div.tag-objeto {
         border-radius: 10%;
         opacity: 8;
         width: 99%;
+    }
+
+    .aside .aside2 {
+        display: none;
+        height: 400px;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #9f7171;
+        padding: 10px 0 10px 0;
+        margin: 10px 0 10px 0;
+        background-image: url("../img/dibujpo-carpa.jpg");
+        background-size: cover;
+        background-position: center;
     }
 
 
