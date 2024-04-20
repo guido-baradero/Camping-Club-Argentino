@@ -806,12 +806,12 @@ div.tag-objeto {
     }
 
     .header .menu a {
-        color: white;
-        border: #8d8c86 1px solid;
+
+        color: rgb(222, 91, 37);
         background-color: #232f3c;
-        padding: auto;
+        padding: auto 5px;
         margin: auto;
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: 100%;
     }
 
@@ -839,6 +839,10 @@ div.tag-objeto {
         padding: 1rem;
         line-height: 1.8rem;
         text-align: justify;
+    }
+
+    .texto-secciones h4 {
+        background-color: #90d3bb;
     }
 
     /*-------------CARRUSEL-------------------------*/
@@ -927,7 +931,6 @@ div.tag-objeto {
     }
 
     .tag-consejo {
-        display: flex;
         flex-direction: column;
         width: 100%;
         margin: 0;
@@ -935,8 +938,9 @@ div.tag-objeto {
     }
 
     .tag-consejo img {
-        width: 600px;
+        width: 100%;
         border-radius: 10%;
+        margin-bottom: 50px;
     }
 
     .tag-2-consejos {
@@ -968,6 +972,12 @@ div.tag-objeto {
         text-decoration: none;
     }
 
+    /*-------------contacto--------*/
+
+    .formulario {
+        flex-direction: column;
+        padding-top: 50px;
+    }
 
 
     /*------------------aside Mobile---------------*/
@@ -978,7 +988,6 @@ div.tag-objeto {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        background-color: #8d8c86;
         grid-area: aside;
     }
 
@@ -988,8 +997,8 @@ div.tag-objeto {
         color: #fff;
         padding: 40px;
         margin: 0;
-        background-color: #718dab;
         overflow: auto;
+        border-radius: none;
     }
 
     .aside .aside1 p {
@@ -1005,13 +1014,6 @@ div.tag-objeto {
     .aside .aside1 img {
         border-radius: 8%;
         max-width: 768px;
-    }
-
-    .aside .aside1 img:hover {
-        border: #4f6781 solid 5px;
-        border-radius: 10%;
-        opacity: 8;
-        width: 99%;
     }
 
     .aside .aside2 {
