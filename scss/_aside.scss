@@ -1,0 +1,32 @@
+.aside {
+    margin: 0px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    background-color: $color-aside;
+    border-top: $borde solid 2px;
+    border-left: $borde solid 2px;
+    grid-area: aside;
+
+    .aside1 {
+        text-align: center;
+        color: white;
+        padding: 40px;
+        margin: 0;
+        margin-bottom: 10px;
+        background-color: $color-aside1;
+        border-radius: 2%;
+
+        h5 {
+            @extend .h5-comun;
+
+        }
+
+        .nav-destinos {
+            @include estilo-menu;
+        }
+
+    }
+}

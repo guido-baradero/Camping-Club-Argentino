@@ -1,0 +1,47 @@
+.header {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-area: header;
+    border-bottom: #232f3c solid 2px;
+    background-color: $color-header;
+    height: 200px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    h1 {
+        @each $property, $value in $header-estilo-h1 {
+            #{$property}: $value;
+        }
+    }
+
+    .logo {
+
+        img {
+            width: 120px;
+        }
+    }
+
+    .menu {
+        @include estilo-menu;
+
+        ul {
+            display: flex;
+            text-align: right;
+
+            a {
+                color: #232f3c;
+                padding: 20px 20px 36px 20px;
+
+                &:hover {
+                    background-color: rgb(37, 160, 157);
+                    border-radius: 8%;
+                    padding-bottom: 36px;
+                }
+            }
+        }
+    }
+}

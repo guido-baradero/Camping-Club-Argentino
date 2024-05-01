@@ -1,0 +1,64 @@
+.h2-comun {
+    padding-bottom: 50px;
+    @include fuente;
+}
+
+.h3-comun {
+    @include fuente;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.h4-comun {
+    @include fuente;
+    text-align: center;
+}
+
+.h5-comun {
+    @include fuente;
+    padding: 20px 0 0 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.p-comun {
+    @include texto-comun;
+}
+
+.campo {
+    padding: 10px;
+    text-align: right;
+
+    label {
+        text-align: left;
+    }
+
+    input {
+        text-align: right;
+    }
+
+    select {
+        background-color: #90d3bb;
+
+        option {
+            background-color: #9f7171;
+            color: white;
+        }
+    }
+
+    textarea {
+        font-size: small;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,41 @@
+main {
+    grid-area: main;
+    background-color: #fff;
+    margin-top: 0;
+    padding: 20px;
+    padding-top: 0;
+
+    .principal {
+        margin-bottom: 20px;
+
+        .texto {
+            h2 {
+                @extend .h2-comun;
+            }
+
+            p {
+                @extend .p-comun;
+            }
+
+            h3 {
+                @extend .h3-comun;
+            }
+        }
+
+        .texto-secciones {
+            h2 {
+                @extend .h2-comun;
+            }
+
+            p {
+                @extend .p-comun;
+            }
+
+            h3 {
+                @extend .h3-comun;
+                text-align: left;
+                padding-bottom: 50px;
+            }
+        }
+    }
+}

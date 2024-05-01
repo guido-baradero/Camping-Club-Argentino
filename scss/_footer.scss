@@ -1,0 +1,40 @@
+.footer {
+    width: 100%;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $footer;
+    border-top: #232f3c solid 2px;
+
+    .footer1 {
+        text-align: center;
+
+        h2 {
+            color: white;
+            padding-top: 50px;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: .5rem;
+            color: #91aac5;
+        }
+
+    }
+
+    .footer2 {
+        align-items: center;
+        display: flex;
+        text-align: center;
+
+        .nav-destinos {
+            @include estilo-menu;
+        }
+    }
+
+    .footer3 {
+        text-align: center;
+        display: flex;
+    }
+}

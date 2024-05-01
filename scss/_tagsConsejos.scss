@@ -1,0 +1,41 @@
+.tag-consejo {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 100px 50px 100px;
+
+    .escalado {
+        transition: all, 2s;
+
+        &:hover {
+            background-color: darken($fondo-camping, 10%);
+            transform: scale(1.5);
+        }
+    }
+
+    .texto-secciones {
+
+        h2 {
+            @extend .h2-comun;
+        }
+
+        p {
+            @extend .p-comun;
+        }
+    }
+}
+
+.tag-2-consejos {
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .tag-2-objetos {
+        width: 300px;
+        padding: 20px;
+        margin: 0;
+    }
+}

@@ -1,0 +1,44 @@
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: $borde solid 2px;
+    align-items: flex-start;
+
+    .formulario-izq {
+        text-align: center;
+        padding: 20px;
+
+        h3 {
+            @extend .h3-comun;
+        }
+
+        p {
+            @extend .p-comun;
+        }
+
+        img {
+            margin-top: 50px;
+        }
+    }
+
+    .formulario-der {
+        padding: 20px;
+
+        h3 {
+            @extend .h3-comun;
+        }
+
+        form {
+            @extend .campo;
+
+            .grupo-boton {
+                width: 100%;
+
+                .boton-enviar {
+                    @include boton-estilo;
+                }
+            }
+        }
+    }
+}

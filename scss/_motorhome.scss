@@ -1,0 +1,56 @@
+.tag-iframe {
+    margin: auto;
+    padding: auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+
+    .iframe {
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            @extend .h4-comun;
+            text-align: left;
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+    }
+
+    .texto-secciones {
+        h4 {
+            @extend .h4-comun;
+
+        }
+
+        p {
+            @extend .p-comun;
+        }
+    }
+}
+
+.texto-secciones {
+    h4 {
+        @extend .h4-comun;
+    }
+
+    p {
+        @extend .p-comun;
+    }
+}
+
+.tag-destacado {
+    padding: 20px;
+    margin-bottom: 20px;
+
+    h3 {
+        @extend .h3-comun;
+    }
+
+    p {
+        @extend .p-comun;
+    }
+}

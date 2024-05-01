@@ -1,0 +1,12 @@
+.contenedor {
+    background-color: #fff;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+}
