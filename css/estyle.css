@@ -201,6 +201,15 @@
   .contenedor .main .principal .tag-3-destacados .tag-3-camping img {
     width: 90%;
   }
+  .contenedor .main .principal .formulario {
+    flex-direction: column;
+  }
+  .contenedor .main .principal .formulario .formulario-izq {
+    width: 100px;
+  }
+  .contenedor .main .principal .formulario .formulario-der {
+    width: 100%;
+  }
   .contenedor .aside {
     justify-content: space-evenly;
     grid-area: aside;

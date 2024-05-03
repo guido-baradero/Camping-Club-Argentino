@@ -111,6 +111,19 @@
                     }
                 }
 
+
+                .formulario {
+                    flex-direction: column;
+
+                    .formulario-izq {
+                        width: 100px;
+                    }
+
+                    .formulario-der {
+                        width: 100%;
+                    }
+                }
+
             }
 
         }
