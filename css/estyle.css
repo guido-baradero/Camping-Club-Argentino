@@ -122,9 +122,9 @@
   grid-template-areas: "header header" "main aside" "footer footer";
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .contenedor {
-    max-width: 400px;
+    max-width: 576px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "header" "main" "aside" "footer";
