@@ -122,18 +122,18 @@
   grid-template-areas: "header header" "main aside" "footer footer";
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 400px) {
   .contenedor {
-    max-width: 576px;
+    max-width: 400px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "header" "main" "aside" "footer";
   }
   .contenedor .header {
+    grid-area: header;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    grid-area: header;
     height: 300px;
     padding-bottom: 0px;
     margin-bottom: 0px;
