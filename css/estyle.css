@@ -145,6 +145,7 @@
     width: 200px;
   }
   .contenedor .header .menu {
+    display: none;
     margin-bottom: 20px;
   }
   .contenedor .header .menu ul {
