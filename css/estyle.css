@@ -145,8 +145,24 @@
   .contenedor .header .logo {
     width: 200px;
   }
-  .contenedor .header .menu {
-    display: none;
+  .contenedor .header .conteiner {
+    width: 576px;
+  }
+  .contenedor .header .conteiner .menu {
+    width: 576px;
+  }
+  .contenedor .header .conteiner .menu ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .contenedor .header .conteiner .menu ul li a {
+    padding: auto;
+    margin: auto;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
   }
   .contenedor .main {
     background-color: #9df0d3;

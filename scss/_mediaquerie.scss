@@ -27,9 +27,32 @@
                 width: 200px;
             }
 
-            .menu {
-                display: none;
+            .conteiner {
+                width: 576px;
 
+                .menu {
+
+                    width: 576px;
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        margin-bottom: 20px;
+                        width: 100%;
+
+                        li {
+                            a {
+
+                                padding: auto;
+                                margin: auto;
+                                width: 100%;
+                                font-weight: bold;
+                                font-size: 1rem;
+                            }
+                        }
+
+                    }
+                }
             }
         }
 
