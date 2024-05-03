@@ -1,5 +1,6 @@
 @media screen and (max-width: 576px) {
     .contenedor {
+        max-width: 576px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
@@ -28,36 +29,90 @@
 
             .menu {
                 display: none;
-                margin-bottom: 20px;
 
-                ul {
-                    padding: 0;
-
-                    li {
-                        background-color: #232f3c;
-
-                        a {
-
-                            color: rgb(237, 164, 10);
-
-                            padding: auto;
-                            margin: auto;
-                            padding-bottom: 10px;
-                            margin-bottom: 20px;
-                            width: 100%;
-                            height: 500px;
-                            font-weight: bold;
-                        }
-                    }
-                }
             }
         }
 
-        .main {}
+        .main {
+            background-color: #9df0d3;
+            grid-area: main;
 
-        .aside {}
+            .principal {
+                .hero-section {}
 
-        .footer {}
+                .texto {}
+
+                .texto-secciones {}
+
+                .tag-destacado {
+                    flex-direction: column;
+
+                    .tag-destacado-izq {
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .tag-destacado-der {
+                        width: 100%;
+                    }
+                }
+
+                .tag-3-destacados {
+                    flex-direction: column;
+
+                    .tag-3-camping {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 90%;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .aside {
+            justify-content: space-evenly;
+            grid-area: aside;
+            border-left: none;
+            border-bottom: #232f3c solid;
+        }
+
+        .footer {
+            grid-area: footer;
+            flex-direction: column;
+
+            .footer1 {
+                flex-direction: column;
+                text-align: center;
+
+                .h2 {
+                    color: white;
+                    font-size: 2.5rem;
+                    margin-top: 0px;
+                    margin-bottom: 40px;
+                }
+
+                .logo {
+                    width: 120px;
+                    border-radius: 100%;
+                }
+            }
+
+            .footer2 {
+                display: none;
+            }
+
+            .footer3 {
+                text-align: center;
+            }
+        }
 
 
 
