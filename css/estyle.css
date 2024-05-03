@@ -40,7 +40,7 @@
 
 .tag img {
   width: 300px;
-  pading: 0;
+  padding: 0;
   margin: auto;
 }
 
@@ -127,6 +127,41 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "header" "main" "aside" "footer";
+  }
+  .contenedor .header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    height: 300px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .contenedor .header .titulo {
+    text-align: center;
+    padding: 10px;
+  }
+  .contenedor .header .logo {
+    width: 200px;
+  }
+  .contenedor .header .menu {
+    margin-bottom: 20px;
+  }
+  .contenedor .header .menu ul {
+    padding: 0;
+  }
+  .contenedor .header .menu ul li {
+    background-color: #232f3c;
+  }
+  .contenedor .header .menu ul li a {
+    color: rgb(237, 164, 10);
+    padding: auto;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 500px;
+    font-weight: bold;
   }
 }
 * {
@@ -215,6 +250,7 @@ main .principal .texto-secciones h3 {
   height: 800px;
   padding: 0;
   margin: 0;
+  margin-top: 50px;
   margin-bottom: 50px;
   padding-bottom: 200px;
   background-image: url(../img/estilo/hero-section.jpg);
@@ -223,7 +259,7 @@ main .principal .texto-secciones h3 {
 .hero-section .texto-hero-section .pregunta {
   opacity: 0;
   text-align: left;
-  padding-top: 150px;
+  padding-top: 100px;
   color: white;
   font-size: 6rem;
   animation: aparecer-pregunta 1s ease-in-out forwards 2s;

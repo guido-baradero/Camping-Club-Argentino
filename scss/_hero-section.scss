@@ -2,6 +2,7 @@
     height: 800px;
     padding: 0;
     margin: 0;
+    margin-top: 50px;
     margin-bottom: 50px;
     padding-bottom: 200px;
     background-image: url(../img/estilo/hero-section.jpg);
@@ -12,7 +13,7 @@
         .pregunta {
             opacity: 0;
             text-align: left;
-            padding-top: 150px;
+            padding-top: 100px;
             color: white;
             font-size: 6rem;
             animation: aparecer-pregunta 1s ease-in-out forwards 2s;
