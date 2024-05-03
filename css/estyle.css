@@ -130,10 +130,10 @@
     grid-template-areas: "header" "main" "aside" "footer";
   }
   .contenedor .header {
-    grid-area: header;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    grid-area: header;
     height: 300px;
     padding-bottom: 0px;
     margin-bottom: 0px;
