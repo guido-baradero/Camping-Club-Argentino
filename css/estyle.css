@@ -171,6 +171,9 @@
             }
         }*/
   }
+  .contenedor .header .titulo {
+    width: 50%;
+  }
   .contenedor .header .titulo h1 {
     font-size: 2rem;
     text-align: center;
@@ -184,6 +187,7 @@
   }
   .contenedor .header .menu ul {
     flex-direction: column;
+    text-align: center;
   }
   .contenedor .main {
     background-color: #9df0d3;
@@ -211,13 +215,57 @@
   .contenedor .main .principal .tag-3-destacados .tag-3-camping img {
     width: 90%;
   }
-  .contenedor .main .principal .formulario {
+  .contenedor .main .principal .tag-consejo {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .contenedor .main .principal .tag-consejo .img {
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 50px;
+  }
+  .contenedor .main .tag-2-consejos {
     flex-direction: column;
   }
-  .contenedor .main .principal .formulario .formulario-izq {
+  .contenedor .main .tag-iframe {
+    margin: auto;
+    padding: auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  .contenedor .main .tag-iframe .iframe {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor .main .tag-iframe .iframe h4 {
+    text-align: center;
+    padding-top: 0px;
+    background-color: #fff;
+  }
+  .contenedor .main .tag-iframe .iframe iframe {
+    width: 576px;
+  }
+  .contenedor .main .tag-iframe .texto-secciones {
+    display: none;
+  }
+  .contenedor .main .tag-destacado .img-tag-destacado {
+    width: 100%;
+  }
+  .contenedor .main .tag-destacado .img-tag-destacado img {
+    margin: auto;
+    width: 100%;
+    border-radius: 8%;
+  }
+  .contenedor .main .formulario {
+    flex-direction: column;
+  }
+  .contenedor .main .formulario .formulario-izq {
     width: 100px;
   }
-  .contenedor .main .principal .formulario .formulario-der {
+  .contenedor .main .formulario .formulario-der {
     width: 100%;
   }
   .contenedor .aside {
@@ -227,11 +275,17 @@
     border-bottom: #232f3c solid;
   }
   .contenedor .footer {
+    display: none;
+    width: 100%;
     grid-area: footer;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 119, 149);
+    border-top: #232f3c solid 2px;
   }
   .contenedor .footer .footer1 {
-    flex-direction: column;
     text-align: center;
   }
   .contenedor .footer .footer1 .h2 {
@@ -244,11 +298,19 @@
     width: 120px;
     border-radius: 100%;
   }
+  .contenedor .footer .footer1 .logo img {
+    text-align: center;
+  }
   .contenedor .footer .footer2 {
     display: none;
   }
   .contenedor .footer .footer3 {
     text-align: center;
+  }
+  .contenedor .footer .footer3 a img {
+    width: 70px;
+    padding: 10px;
+    border-radius: 40%;
   }
 }
 * {

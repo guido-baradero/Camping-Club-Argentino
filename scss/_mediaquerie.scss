@@ -20,6 +20,8 @@
             max-width: 100%;
 
             .titulo {
+                width: 50%;
+
                 h1 {
                     font-size: 2rem;
                     text-align: center;
@@ -31,16 +33,13 @@
                 width: 50px;
             }
 
-
-
-
-
             .menu {
                 //display: none;
                 width: 50%;
 
                 ul {
                     flex-direction: column;
+                    text-align: center;
                 }
             }
 
@@ -79,7 +78,6 @@
                 }*/
 
         }
-
 
         .main {
             background-color: #9df0d3;
@@ -121,22 +119,123 @@
                     }
                 }
 
-
-                .formulario {
+                .tag-consejo {
                     flex-direction: column;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
 
-                    .formulario-izq {
-                        width: 100px;
+                    .texto-secciones {
+                        h2 {}
+
+                        p {}
                     }
 
-                    .formulario-der {
+                    .img {
                         width: 100%;
+                        border-radius: 10%;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+
+            .checklist {
+                h2 {}
+
+                ul {
+                    li {
+                        .item-img {}
+
+                        .tilde {}
+                    }
+                }
+            }
+
+            .tag-2-consejos {
+                flex-direction: column;
+
+                .tag-2-objetos {
+                    img {}
+
+                    .texto-objeto {
+                        h4 {}
+
+                        p {}
+                    }
+                }
+            }
+
+            h3 {}
+
+            .tag-iframe {
+                margin: auto;
+                padding: auto;
+                padding-top: 50px;
+                display: flex;
+                flex-direction: row;
+
+                .iframe {
+                    display: flex;
+                    flex-direction: column;
+
+                    h4 {
+                        text-align: center;
+                        padding-top: 0px;
+                        background-color: #fff;
+                    }
+
+                    iframe {
+                        width: 576px;
+
                     }
                 }
 
+                .texto-secciones {
+                    display: none;
+                }
+            }
+
+            .texto-secciones {
+                h4 {}
+
+                p {}
+            }
+
+            h3 {}
+
+            .tag-destacado {
+                .texto-destacado {
+                    h3 {}
+
+                    p {}
+                }
+
+                .img-tag-destacado {
+                    width: 100%;
+
+                    img {
+                        margin: auto;
+                        width: 100%;
+                        border-radius: 8%;
+                    }
+                }
+            }
+
+
+            .formulario {
+                flex-direction: column;
+
+                .formulario-izq {
+                    width: 100px;
+                }
+
+                .formulario-der {
+                    width: 100%;
+                }
             }
 
         }
+
 
         .aside {
             justify-content: space-evenly;
@@ -146,11 +245,17 @@
         }
 
         .footer {
+            display: none;
+            width: 100%;
             grid-area: footer;
+            display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 119, 149);
+            border-top: #232f3c solid 2px;
 
             .footer1 {
-                flex-direction: column;
                 text-align: center;
 
                 .h2 {
@@ -163,6 +268,10 @@
                 .logo {
                     width: 120px;
                     border-radius: 100%;
+
+                    img {
+                        text-align: center;
+                    }
                 }
             }
 
@@ -172,13 +281,16 @@
 
             .footer3 {
                 text-align: center;
+
+                a {
+                    img {
+                        width: 70px;
+                        padding: 10px;
+                        border-radius: 40%;
+                    }
+                }
+
             }
         }
-
-
-
     }
-
-
-
 }
