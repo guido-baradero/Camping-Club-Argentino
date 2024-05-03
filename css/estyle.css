@@ -130,7 +130,7 @@
     grid-template-areas: "header" "main" "aside" "footer";
   }
   .contenedor .header {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     grid-area: header;
@@ -172,41 +172,36 @@
         }*/
   }
   .contenedor .header .titulo h1 {
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     padding: 10px;
   }
   .contenedor .header .logo {
-    width: 200px;
+    width: 100px;
   }
   .contenedor .header .navegacion {
     width: 100%;
   }
-  .contenedor .header .navegacion .menu {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: baseline;
-  }
   .contenedor .header .navegacion .menu ul {
-    text-align: center;
-    display: flex;
-    align-items: baseline;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-    width: 576px;
+    list-style-type: none;
+    padding: 15px;
   }
   .contenedor .header .navegacion .menu ul li {
-    display: flex;
-    align-items: baseline;
+    font-size: 1.8rem;
+    text-align: center;
   }
   .contenedor .header .navegacion .menu ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
     padding: 15px;
-    margin: auto;
-    width: 100%;
+    color: black;
+  }
+  .contenedor .header .navegacion .menu ul li a:hover {
     font-weight: bold;
-    font-size: 1rem;
+    color: white;
+  }
+  .contenedor .header .navegacion .menu ul {
+    flex-direction: column;
   }
   .contenedor .main {
     background-color: #9df0d3;

@@ -10,7 +10,7 @@
             "footer";
 
         .header {
-            flex-direction: column;
+            flex-direction: row;
             justify-content: space-between;
             align-items: center;
             grid-area: header;
@@ -21,14 +21,14 @@
 
             .titulo {
                 h1 {
-                    font-size: 1rem;
+                    font-size: 2rem;
                     text-align: center;
                     padding: 10px;
                 }
             }
 
             .logo {
-                width: 200px;
+                width: 100px;
             }
 
             .navegacion {
@@ -36,38 +36,12 @@
                 width: 100%;
 
                 .menu {
-                    //display: none;
-                    width: 100%;
-                    text-align: center;
-                    display: flex;
-                    align-items: baseline;
+                    @include estilo-menu;
 
                     ul {
-                        text-align: center;
-                        display: flex;
-                        align-items: baseline;
-                        margin: 0;
-                        padding: 0;
-                        margin-bottom: 20px;
-                        width: 576px;
-
-                        li {
-                            display: flex;
-                            align-items: baseline;
-                            //text-align: center;
-
-                            a {
-                                //text-align: center;
-                                padding: 15px;
-                                margin: auto;
-                                width: 100%;
-                                font-weight: bold;
-                                font-size: 1rem;
-                            }
-                        }
+                        flex-direction: column;
                     }
                 }
-
             }
 
             /*.menu {
