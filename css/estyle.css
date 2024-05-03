@@ -146,13 +146,16 @@
   .contenedor .header .logo {
     width: 200px;
   }
-  .contenedor .header .menu {
+  .contenedor .header .navegacion {
+    max-width: 100%;
+  }
+  .contenedor .header .navegacion .menu {
     width: 100%;
     text-align: center;
     display: flex;
     align-items: baseline;
   }
-  .contenedor .header .menu ul {
+  .contenedor .header .navegacion .menu ul {
     text-align: center;
     display: flex;
     align-items: baseline;
@@ -161,11 +164,11 @@
     margin-bottom: 20px;
     width: 100%;
   }
-  .contenedor .header .menu ul li {
+  .contenedor .header .navegacion .menu ul li {
     display: flex;
     align-items: baseline;
   }
-  .contenedor .header .menu ul li a {
+  .contenedor .header .navegacion .menu ul li a {
     padding: 15px;
     margin: auto;
     width: 100%;

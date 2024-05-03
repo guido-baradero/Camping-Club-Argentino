@@ -30,37 +30,42 @@
                 width: 200px;
             }
 
-            .menu {
-                //display: none;
-                width: 100%;
-                text-align: center;
-                display: flex;
-                align-items: baseline;
+            .navegacion {
 
-                ul {
+                max-width: 100%;
+
+
+                .menu {
+                    //display: none;
+                    width: 100%;
                     text-align: center;
                     display: flex;
                     align-items: baseline;
-                    margin: 0;
-                    padding: 0;
-                    margin-bottom: 20px;
-                    width: 100%;
 
-                    li {
+                    ul {
+                        text-align: center;
                         display: flex;
                         align-items: baseline;
-                        //text-align: center;
+                        margin: 0;
+                        padding: 0;
+                        margin-bottom: 20px;
+                        width: 100%;
 
-                        a {
+                        li {
+                            display: flex;
+                            align-items: baseline;
                             //text-align: center;
-                            padding: 15px;
-                            margin: auto;
-                            width: 100%;
-                            font-weight: bold;
-                            font-size: 1rem;
+
+                            a {
+                                //text-align: center;
+                                padding: 15px;
+                                margin: auto;
+                                width: 100%;
+                                font-weight: bold;
+                                font-size: 1rem;
+                            }
                         }
                     }
-
                 }
             }
         }
