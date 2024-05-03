@@ -9,8 +9,9 @@
         transition: all, 2s;
 
         &:hover {
+
             background-color: darken($fondo-camping, 10%);
-            transform: scale(1.5);
+            transform: scale(1.4);
         }
     }
 
@@ -22,6 +23,64 @@
 
         p {
             @extend .p-comun;
+        }
+    }
+}
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@mixin animation-delay($delay) {
+    animation: fadeIn 1s $delay ease-in-out forwards;
+}
+
+.checklist {
+    .titulo {
+        opacity: 0;
+        @include animation-delay(0s);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        .item {
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            $item-delay: 1s;
+
+            .item-imagen {
+                width: 100px;
+            }
+
+            .tilde {
+                width: 50px;
+            }
+
+            @each $index in (1, 2, 3, 4) {
+
+                &:nth-child(#{$index}) {
+                    @include animation-delay($item-delay);
+                    $item-delay: $item-delay + 1s;
+
+                    .tilde {
+                        opacity: 0;
+                        @include animation-delay($item-delay);
+                        $item-delay: $item-delay + 0.5s;
+                    }
+                }
+            }
         }
     }
 }

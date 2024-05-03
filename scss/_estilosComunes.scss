@@ -26,6 +26,11 @@
     @include texto-comun;
 }
 
+.p-autor {
+    font-size: .5rem;
+    color: #91aac5;
+}
+
 .campo {
     padding: 10px;
     text-align: right;
@@ -50,15 +55,4 @@
     textarea {
         font-size: small;
     }
-
-
-
-
-
-
-
-
-
-
-
 }

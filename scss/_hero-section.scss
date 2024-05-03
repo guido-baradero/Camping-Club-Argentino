@@ -4,22 +4,56 @@
     margin: 0;
     margin-bottom: 50px;
     padding-bottom: 200px;
-    background-image: url(../img/carrusel5.jpg);
+    background-image: url(../img/estilo/hero-section.jpg);
     background-size: cover;
 
     .texto-hero-section {
-        h2 {
-            transform: translate(200px, 200px);
+
+        .pregunta {
+            opacity: 0;
             text-align: left;
             padding-top: 150px;
             color: white;
             font-size: 6rem;
+            animation: aparecer-pregunta 1s ease-in-out forwards 2s;
+
         }
 
         p {
             color: white;
-            font-size: 3rem;
+            font-size: 2rem;
         }
-    }
 
+        .respuesta {
+            color: $naranja;
+            opacity: 0;
+            animation: aparecer-respuesta 1s ease-in-out forwards 3s;
+        }
+
+
+        @keyframes aparecer-pregunta {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes aparecer-respuesta {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    }
 }

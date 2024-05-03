@@ -1,13 +1,3 @@
-/*.colores {
-    background-color: rgb(231, 102, 44);
-    background-color: rgb(222, 91, 37);
-    background-color: rgb(77, 173, 171);
-    background-color: rgb(37, 160, 157);
-    background-color: rgb(1, 130, 170);
-    background-color: rgb(0, 119, 149);
-    background-color: rgb(254, 188, 39);
-    background-color: rgb(237, 164, 10);
-}*/
 .tag-destacado-izq img {
   width: 340px;
   padding: 20px;
@@ -24,6 +14,16 @@
   padding: 20px;
   margin: auto;
   border-radius: 5%;
+}
+
+.item-img img {
+  width: 100px;
+  height: 100px;
+}
+
+.tilde img {
+  width: 30px;
+  height: 30px;
 }
 
 .tag-consejo img {
@@ -86,6 +86,11 @@
   text-align: center;
 }
 
+.p-autor, .footer .footer1 p {
+  font-size: 0.5rem;
+  color: #91aac5;
+}
+
 .campo, .formulario .formulario-der form {
   padding: 10px;
   text-align: right;
@@ -112,7 +117,7 @@
   margin: 0;
   width: 100%;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 0.75fr;
   grid-template-rows: auto;
   grid-template-areas: "header header" "main aside" "footer footer";
 }
@@ -212,19 +217,45 @@ main .principal .texto-secciones h3 {
   margin: 0;
   margin-bottom: 50px;
   padding-bottom: 200px;
-  background-image: url(../img/carrusel5.jpg);
+  background-image: url(../img/estilo/hero-section.jpg);
   background-size: cover;
 }
-.hero-section .texto-hero-section h2 {
-  transform: translate(200px, 200px);
+.hero-section .texto-hero-section .pregunta {
+  opacity: 0;
   text-align: left;
   padding-top: 150px;
   color: white;
   font-size: 6rem;
+  animation: aparecer-pregunta 1s ease-in-out forwards 2s;
 }
 .hero-section .texto-hero-section p {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+.hero-section .texto-hero-section .respuesta {
+  color: rgb(222, 91, 37);
+  opacity: 0;
+  animation: aparecer-respuesta 1s ease-in-out forwards 3s;
+}
+@keyframes aparecer-pregunta {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes aparecer-respuesta {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .tag-destacado {
@@ -343,8 +374,64 @@ main .principal .texto-secciones h3 {
 }
 .tag-consejo .escalado:hover {
   background-color: #6bc5a5;
-  transform: scale(1.5);
+  transform: scale(1.4);
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.checklist .titulo {
+  opacity: 0;
+  animation: fadeIn 1s 0s ease-in-out forwards;
+}
+.checklist ul {
+  list-style: none;
+  padding: 0;
+}
+.checklist ul .item {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+}
+.checklist ul .item .item-imagen {
+  width: 100px;
+}
+.checklist ul .item .tilde {
+  width: 50px;
+}
+.checklist ul .item:nth-child(1) {
+  animation: fadeIn 1s 1s ease-in-out forwards;
+}
+.checklist ul .item:nth-child(1) .tilde {
+  opacity: 0;
+  animation: fadeIn 1s 2s ease-in-out forwards;
+}
+.checklist ul .item:nth-child(2) {
+  animation: fadeIn 1s 2.5s ease-in-out forwards;
+}
+.checklist ul .item:nth-child(2) .tilde {
+  opacity: 0;
+  animation: fadeIn 1s 3.5s ease-in-out forwards;
+}
+.checklist ul .item:nth-child(3) {
+  animation: fadeIn 1s 4s ease-in-out forwards;
+}
+.checklist ul .item:nth-child(3) .tilde {
+  opacity: 0;
+  animation: fadeIn 1s 5s ease-in-out forwards;
+}
+.checklist ul .item:nth-child(4) {
+  animation: fadeIn 1s 5.5s ease-in-out forwards;
+}
+.checklist ul .item:nth-child(4) .tilde {
+  opacity: 0;
+  animation: fadeIn 1s 6.5s ease-in-out forwards;
+}
+
 .tag-2-consejos {
   margin: 20px 0 20px 0;
   display: flex;
@@ -423,7 +510,7 @@ main .principal .texto-secciones h3 {
 .aside .aside1 {
   text-align: center;
   color: white;
-  padding: 40px;
+  padding: 20px;
   margin: 0;
   margin-bottom: 10px;
   background-color: rgb(237, 164, 10);
@@ -461,13 +548,10 @@ main .principal .texto-secciones h3 {
   text-align: center;
 }
 .footer .footer1 h2 {
-  color: white;
-  padding-top: 50px;
+  text-align: left;
   font-size: 2.5rem;
-}
-.footer .footer1 p {
-  font-size: 0.5rem;
-  color: #91aac5;
+  padding: 27px 0 27px 27px;
+  color: white;
 }
 .footer .footer2 {
   align-items: center;

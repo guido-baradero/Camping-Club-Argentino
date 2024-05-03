@@ -5,16 +5,33 @@ $header-estilo-h1: (
     color: white
 );
 
+$footer-estilo-h2: (
+    color: white,
+    padding-top: 50px,
+    font-size: 2.5rem
+);
+
 $imagenes-map: (
     "tag-destacado-izq": (width: 340px, padding: 20px, border-radius: 5%),
     "carousel": (border-radius: 10%, height: 300px),
     "tag-3-camping": (width: 300px, padding: 20px, margin: auto, border-radius: 5%),
+    "item-img": (width: 100px, height: 100px),
+    "tilde": (width: 30px, height: 30px),
     "tag-consejo": (width: 200px, height: auto, float: left),
     "tag-2-objetos": (width: 300px, padding: 20px, margin: auto),
     "tag":(width: 300px, pading:0, margin:auto),
     "logo":(width: 120px, border-radius: 100%, ),
     "footer3":(text-align: center, width: 70px, padding: 10px, border-radius: 40%)
 );
+
+$color-header: rgb(77, 173, 171);
+$color-aside: rgb(254, 188, 39);
+$color-aside1: rgb(237, 164, 10);
+
+$primary-color: rgb(77, 173, 171);
+$secondary-color: #232f3c;
+$highlight-color: rgb(37, 160, 157);
+$background-color: #fff;
 
 
 $fondo-camping: #90d3bb;
@@ -25,9 +42,9 @@ $borde: #232f3c;
 $letra-columna: #9f7171;
 
 
-$background-body: rgb(255, 251, 240);
-$font-primary: Arial, Helvetica, sans-serif;
-$font-secondary: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$body: rgb(255, 251, 240);
+$font-primaria: Arial, Helvetica, sans-serif;
+$font-secundaria: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 $header-bg: rgb(77, 173, 171);
 
 $highlight-bg: rgb(37, 160, 157);
