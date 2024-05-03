@@ -137,6 +137,7 @@
     height: 300px;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    max-width: 100%;
     /*.menu {
             //display: none;
             width: 100%;
@@ -179,7 +180,33 @@
     width: 200px;
   }
   .contenedor .header .navegacion {
-    display: none;
+    width: 100%;
+  }
+  .contenedor .header .navegacion .menu {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+  }
+  .contenedor .header .navegacion .menu ul {
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    width: 576px;
+  }
+  .contenedor .header .navegacion .menu ul li {
+    display: flex;
+    align-items: baseline;
+  }
+  .contenedor .header .navegacion .menu ul li a {
+    padding: 15px;
+    margin: auto;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
   }
   .contenedor .main {
     background-color: #9df0d3;
