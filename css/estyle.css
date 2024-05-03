@@ -246,7 +246,7 @@
     background-color: #fff;
   }
   .contenedor .main .tag-iframe .iframe iframe {
-    width: 576px;
+    width: 100%;
   }
   .contenedor .main .tag-iframe .texto-secciones {
     display: none;
