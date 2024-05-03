@@ -138,27 +138,35 @@
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
-  .contenedor .header .titulo {
+  .contenedor .header .titulo h1 {
+    font-size: 1rem;
     text-align: center;
     padding: 10px;
   }
   .contenedor .header .logo {
     width: 200px;
   }
-  .contenedor .header .conteiner {
-    width: 576px;
+  .contenedor .header .menu {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
   }
-  .contenedor .header .conteiner .menu {
-    width: 576px;
-  }
-  .contenedor .header .conteiner .menu ul {
+  .contenedor .header .menu ul {
+    text-align: center;
+    display: flex;
+    align-items: baseline;
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
     width: 100%;
   }
-  .contenedor .header .conteiner .menu ul li a {
-    padding: auto;
+  .contenedor .header .menu ul li {
+    display: flex;
+    align-items: baseline;
+  }
+  .contenedor .header .menu ul li a {
+    padding: 15px;
     margin: auto;
     width: 100%;
     font-weight: bold;
