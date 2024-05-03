@@ -130,11 +130,11 @@
     grid-template-areas: "header" "main" "aside" "footer";
   }
   .contenedor .header {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     grid-area: header;
-    height: 300px;
+    height: 600px;
     padding-bottom: 0px;
     margin-bottom: 0px;
     max-width: 100%;
@@ -177,30 +177,12 @@
     padding: 10px;
   }
   .contenedor .header .logo {
-    width: 100px;
+    width: 50px;
   }
-  .contenedor .header .navegacion {
-    width: 100%;
+  .contenedor .header .menu {
+    width: 50%;
   }
-  .contenedor .header .navegacion .menu ul {
-    list-style-type: none;
-    padding: 15px;
-  }
-  .contenedor .header .navegacion .menu ul li {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-  .contenedor .header .navegacion .menu ul li a {
-    text-decoration: none;
-    font-size: 1.6rem;
-    padding: 15px;
-    color: black;
-  }
-  .contenedor .header .navegacion .menu ul li a:hover {
-    font-weight: bold;
-    color: white;
-  }
-  .contenedor .header .navegacion .menu ul {
+  .contenedor .header .menu ul {
     flex-direction: column;
   }
   .contenedor .main {

@@ -10,11 +10,11 @@
             "footer";
 
         .header {
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
             grid-area: header;
-            height: 300px;
+            height: 600px;
             padding-bottom: 0px;
             margin-bottom: 0px;
             max-width: 100%;
@@ -28,21 +28,22 @@
             }
 
             .logo {
-                width: 100px;
+                width: 50px;
             }
 
-            .navegacion {
 
-                width: 100%;
 
-                .menu {
-                    @include estilo-menu;
 
-                    ul {
-                        flex-direction: column;
-                    }
+
+            .menu {
+                //display: none;
+                width: 50%;
+
+                ul {
+                    flex-direction: column;
                 }
             }
+
 
             /*.menu {
                     //display: none;
