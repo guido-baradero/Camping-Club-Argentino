@@ -32,10 +32,10 @@
 
             .navegacion {
 
-                max-width: 100%;
+                display: none;
+            }
 
-
-                .menu {
+            /*.menu {
                     //display: none;
                     width: 100%;
                     text-align: center;
@@ -66,13 +66,12 @@
                             }
                         }
                     }
-                }
-            }
+                }*/
+
         }
 
 
         .main {
-            display: none;
             background-color: #9df0d3;
             grid-area: main;
 
