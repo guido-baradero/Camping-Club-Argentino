@@ -664,7 +664,7 @@ main {
     padding: 10px;
   }
   body .contenedor .main {
-    background-color: #9df0d3;
+    background-color: white;
     grid-area: main;
     width: 100%;
     margin: 0;
@@ -709,6 +709,7 @@ main {
   }
   body .contenedor .main .principal .tag-destacado {
     flex-direction: column;
+    border-radius: 0;
   }
   body .contenedor .main .principal .tag-destacado .tag-destacado-izq {
     width: 100%;
@@ -723,6 +724,8 @@ main {
     flex-direction: column;
   }
   body .contenedor .main .principal .tag-3-destacados .tag-3-camping {
+    width: 90%;
+    margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
   }
