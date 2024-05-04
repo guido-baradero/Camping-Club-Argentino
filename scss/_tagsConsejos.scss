@@ -10,19 +10,8 @@
 
         &:hover {
 
-            background-color: darken($fondo-camping, 10%);
+            background-color: darken($tag, 10%);
             transform: scale(1.4);
-        }
-    }
-
-    .texto-secciones {
-
-        h2 {
-            @extend .h2-comun;
-        }
-
-        p {
-            @extend .p-comun;
         }
     }
 }
@@ -48,7 +37,7 @@
     margin: auto;
 
     .titulo {
-        background-color: $fondo-camping;
+        background-color: $tag;
         margin: auto;
         text-align: center;
         opacity: 0;
@@ -118,15 +107,5 @@
         margin: auto;
         text-align: center;
 
-
-        .texto-objeto {
-            h4 {
-                @extend .h4-comun;
-            }
-
-            p {
-                @extend .p-comun;
-            }
-        }
     }
 }

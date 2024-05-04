@@ -23,15 +23,12 @@
                 max-width: 576px;
 
 
-                .titulo {
-                    width: 100%;
 
-                    h1 {
-                        font-size: 2.7rem;
-                        text-align: center;
-                        padding-bottom: 0px;
-                        margin: auto;
-                    }
+                h1 {
+                    font-size: 1.8rem;
+                    text-align: center;
+                    padding: 0px;
+                    margin: auto;
                 }
 
                 .logo {
@@ -42,8 +39,8 @@
                     }
                 }
 
-
                 .menu {
+                    @include estilo-menu;
                     padding-bottom: opx;
                     margin-bottom: 0px;
                     width: 100%;
@@ -57,12 +54,6 @@
                         li {
                             a {
                                 color: $color-aside1;
-
-                                &:hover {
-                                    background-color: rgb(37, 160, 157);
-                                    border-radius: 5%;
-                                    padding: 10px;
-                                }
                             }
                         }
                     }
@@ -79,6 +70,9 @@
                 .principal {
 
                     //INDEX
+
+                    //HERO SECTION
+
                     .hero-section {
                         height: 400px;
                         padding: 0;
@@ -128,6 +122,7 @@
                         }
                     }
 
+                    //DESTINOS
                     .tag-destacado {
                         flex-direction: column;
                         border-radius: 0;
@@ -161,11 +156,16 @@
                         }
                     }
 
+                    //CONSEJOS
                     .tag-consejo {
                         flex-direction: column;
                         width: 100%;
                         margin: 0;
                         padding: 0;
+
+                        p {
+                            line-height: 2;
+                        }
 
                         .img {
                             width: 100%;
@@ -178,7 +178,7 @@
 
                         ul {
                             li {
-                                .item-img {
+                                p {
                                     display: none;
                                 }
                             }
@@ -189,6 +189,7 @@
                         flex-direction: column;
                     }
 
+                    //MOTORHOME
                     .tag-iframe {
                         margin: auto;
                         padding: auto;
@@ -230,6 +231,7 @@
                         }
                     }
 
+                    //CONTACTO
                     .formulario {
                         flex-direction: column;
                         padding-top: 50px;
@@ -246,7 +248,7 @@
                                 width: 100%;
                             }
 
-                            .medios de pago {
+                            .medios-de-pago {
                                 margin: auto;
                             }
                         }
@@ -262,14 +264,15 @@
                             }
 
                             .ocultar {
-                                display: flex;
+                                display: inline-block;
                                 width: 50%;
                                 flex-direction: column;
                                 align-items: center;
+                                margin: auto;
 
                                 img {
                                     margin: auto;
-                                    height: 500px;
+                                    height: 400px;
                                 }
                             }
 
@@ -293,12 +296,16 @@
                 }
             }
 
+            //ASIDE
+
             .aside {
                 justify-content: space-evenly;
                 grid-area: aside;
                 border-left: none;
-                border-bottom: #232f3c solid;
+                border-bottom: $borde solid;
             }
+
+            //FOOTER
 
             .footer {
                 width: 100%;
@@ -307,8 +314,8 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                background-color: rgb(0, 119, 149);
-                border-top: #232f3c solid 2px;
+                background-color: $footer;
+                border-top: $borde solid 2px;
 
                 .footer1 {
                     text-align: center;

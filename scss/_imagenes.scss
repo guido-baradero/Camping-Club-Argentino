@@ -1,3 +1,5 @@
+//IMAGENES
+
 @each $contexto, $propiedades in $imagenes-map {
     .#{$contexto} img {
         @each $propiedad, $valor in $propiedades {

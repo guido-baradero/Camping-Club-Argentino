@@ -17,23 +17,12 @@
                 width: 40%;
 
 
-                h3 {
-                    @extend .h3-comun;
-                }
-
-                h5 {
-                    @extend .h5-comun;
-                }
-
                 img {
                     padding: 0;
                     border: $borde solid 1px;
                     border-radius: 5%
                 }
 
-                p {
-                    @extend .p-comun;
-                }
 
                 .grupo-boton {
                     text-align: center;
@@ -106,28 +95,21 @@
             justify-content: space-around;
 
             .tag-3-camping {
-                background-color: $fondo-camping;
+                background-color: $tag;
                 border: solid 1px $naranja;
-                border-radius: $border-radius-camping;
-                text-align: $text-align-camping;
-                padding-bottom: $padding-bottom-camping;
+                border-radius: 8%;
+                text-align: center;
+                padding-bottom: 20px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 
                 &:hover {
                     box-shadow: 0 4px 8px $borde;
-                    background-color: darken($fondo-camping, 10%);
+                    background-color: darken($tag, 10%);
                     transform: scale(1.05);
                 }
 
 
                 .texto-secciones {
-                    h2 {
-                        @extend .h2-comun;
-                    }
-
-                    p {
-                        @extend .p-comun;
-                    }
 
                     h3 {
                         @extend .h3-comun;
@@ -141,8 +123,8 @@
                     padding: 20px;
 
                     .boton {
-                        background-color: $button-bg;
-                        color: $tag-bg;
+                        background-color: $footer;
+                        color: $tag;
 
                         &:hover {
                             background-color: naranja;

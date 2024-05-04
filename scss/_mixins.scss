@@ -55,3 +55,8 @@
         text-align: right;
     }
 }
+
+//ANIMACION CONSEJOS AUTO
+@mixin animation-delay($delay) {
+    animation: fadeIn 1s $delay ease-in-out forwards;
+}

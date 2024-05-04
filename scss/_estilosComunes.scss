@@ -32,7 +32,7 @@
 
 .p-autor {
     font-size: .5rem;
-    color: #91aac5;
+    color: $autor;
 }
 
 .principal,
@@ -65,10 +65,10 @@
     }
 
     select {
-        background-color: #90d3bb;
+        background-color: $tag;
 
         option {
-            background-color: #9f7171;
+            background-color: $letra-columna;
             color: white;
         }
     }

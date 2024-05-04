@@ -1,3 +1,10 @@
+//FUENTES
+
+$font-primaria: Arial, Helvetica, sans-serif;
+$font-secundaria: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+
 $header-estilo-h1: (
     text-align: left,
     font-size: 2.5rem,
@@ -10,6 +17,8 @@ $footer-estilo-h2: (
     padding-top: 50px,
     font-size: 2.5rem
 );
+
+//MAPA DE IMAGENES
 
 $imagenes-map: (
     "tag-destacado-izq": (width: 340px, padding: 20px, border-radius: 5%),
@@ -24,37 +33,16 @@ $imagenes-map: (
     "footer3":(text-align: center, width: 70px, padding: 10px, border-radius: 40%)
 );
 
+
+//COLORES
+
 $color-header: rgb(77, 173, 171);
 $color-aside: rgb(254, 188, 39);
 $color-aside1: rgb(237, 164, 10);
-
-$primary-color: rgb(77, 173, 171);
-$secondary-color: #232f3c;
-$highlight-color: rgb(37, 160, 157);
-$background-color: #fff;
-
-
-$fondo-camping: #90d3bb;
+$border-color: #232f3c;
+$autor: #91aac5;
 $footer: rgb(0, 119, 149);
 $tag: #90d3bb;
 $naranja: rgb(222, 91, 37);
 $borde: #232f3c;
 $letra-columna: #9f7171;
-
-
-$body: rgb(255, 251, 240);
-$font-primaria: Arial, Helvetica, sans-serif;
-$font-secundaria: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-$header-bg: rgb(77, 173, 171);
-
-$highlight-bg: rgb(37, 160, 157);
-$button-bg: rgb(0, 119, 149);
-
-$border-color: #232f3c;
-
-$tag-bg: #90d3bb;
-
-
-$border-radius-camping: 8%;
-$text-align-camping: center;
-$padding-bottom-camping: 20px;
