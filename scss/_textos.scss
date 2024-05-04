@@ -1,0 +1,42 @@
+.principal {
+    h2 {
+        @extend .h2-comun;
+    }
+
+    p {
+        @extend .p-comun;
+    }
+
+    h3 {
+        @extend .h3-comun;
+    }
+
+    .texto {
+        h2 {
+            @extend .h2-comun;
+        }
+
+        p {
+            @extend .p-comun;
+        }
+
+        h3 {
+            @extend .h3-comun;
+        }
+    }
+
+    .texto-secciones {
+        h2 {
+            @extend .h2-comun;
+        }
+
+        p {
+            @extend .p-comun;
+        }
+
+        h3 {
+            @extend .h3-comun;
+            padding-bottom: 50px;
+        }
+    }
+}

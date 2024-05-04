@@ -27,9 +27,6 @@
     }
 }
 
-
-
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -45,27 +42,48 @@
 }
 
 .checklist {
+    width: 80%;
+    padding: auto;
+    text-align: center;
+    margin: auto;
+
     .titulo {
+        background-color: $fondo-camping;
+        margin: auto;
+        text-align: center;
         opacity: 0;
         @include animation-delay(0s);
     }
 
     ul {
+        display: flex;
+        flex-direction: column;
         list-style: none;
-        padding: 0;
+        padding: auto;
+        text-align: right;
 
         .item {
+
             display: flex;
             align-items: center;
             opacity: 0;
             $item-delay: 1s;
+            justify-content: baseline;
 
             .item-imagen {
                 width: 100px;
+                width: 30%;
+            }
+
+            .objeto {
+                background-color: yellow;
+                text-align: center;
+                font-size: 1.6rem;
+                width: 50%;
             }
 
             .tilde {
-                width: 50px;
+                width: 10%;
             }
 
             @each $index in (1, 2, 3, 4) {
@@ -86,15 +104,27 @@
 }
 
 .tag-2-consejos {
-    margin: 20px 0 20px 0;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
+
 
     .tag-2-objetos {
         width: 300px;
-        padding: 20px;
         margin: 0;
+        margin: auto;
+        text-align: center;
+
+
+        .texto-objeto {
+            h4 {
+                @extend .h4-comun;
+            }
+
+            p {
+                @extend .p-comun;
+            }
+        }
     }
 }

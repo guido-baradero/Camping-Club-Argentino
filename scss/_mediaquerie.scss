@@ -1,50 +1,76 @@
 @media screen and (max-width: 576px) {
-    .contenedor {
-        max-width: 576px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "header"
-            "main"
-            "aside"
-            "footer";
+    body {
+        width: 100%;
 
-        .header {
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            grid-area: header;
-            height: 600px;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
-            max-width: 100%;
+        .contenedor {
+            //max-width: 576px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "header"
+                "main"
+                "aside"
+                "footer";
 
-            .titulo {
-                width: 50%;
+            .header {
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                grid-area: header;
+                height: 100%;
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+                max-width: 100%;
 
-                h1 {
-                    font-size: 2rem;
-                    text-align: center;
-                    padding: 10px;
+
+                .titulo {
+                    width: 100%;
+
+                    h1 {
+                        font-size: 2.7rem;
+                        text-align: center;
+                        padding-bottom: 0px;
+                        margin: auto;
+                    }
                 }
-            }
 
-            .logo {
-                width: 50px;
-            }
+                .logo {
 
-            .menu {
-                //display: none;
-                width: 50%;
-
-                ul {
-                    flex-direction: column;
-                    text-align: center;
+                    img {
+                        width: 200px;
+                        padding: 0;
+                    }
                 }
-            }
 
 
-            /*.menu {
+                .menu {
+                    padding-bottom: opx;
+                    margin-bottom: 0px;
+                    width: 100%;
+
+                    ul {
+                        flex-direction: column;
+                        text-align: center;
+                        background-color: $borde;
+
+
+                        li {
+
+                            a {
+                                color: $color-aside1;
+
+                                &:hover {
+                                    background-color: rgb(37, 160, 157);
+                                    border-radius: 5%;
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                /*.menu {
                     //display: none;
                     width: 100%;
                     text-align: center;
@@ -77,220 +103,269 @@
                     }
                 }*/
 
-        }
+            }
 
-        .main {
-            background-color: #9df0d3;
-            grid-area: main;
+            .main {
+                background-color: #9df0d3;
+                grid-area: main;
+                width: 100%;
+                margin: 0;
+                padding: 0;
 
-            .principal {
-                .hero-section {}
+                .principal {
+                    .hero-section {
+                        height: 400px;
+                        padding: 0;
+                        margin: 0;
+                        margin-bottom: 50px;
+                        padding-bottom: 200px;
+                        background-image: url(../img/estilo/hero-section.jpg);
+                        background-size: cover;
 
-                .texto {}
+                        .texto-hero-section {
 
-                .texto-secciones {}
 
-                .tag-destacado {
-                    flex-direction: column;
+                            .pregunta {
+                                padding: 0;
+                                font-size: 3rem;
+                                animation: aparecer 0.5s ease-in-out forwards 1s;
 
-                    .tag-destacado-izq {
-                        width: 100%;
+                            }
 
-                        img {
+                            .respuesta {
+                                font-size: 2rem;
+                            }
+
+                            @keyframes aparecer {
+                                0% {
+                                    opacity: 0;
+                                }
+
+                                100% {
+                                    opacity: 1;
+                                }
+                            }
+
+                            @keyframes aparecer {
+                                from {
+                                    opacity: 0;
+                                    transform: translateY(40px);
+                                }
+
+                                to {
+                                    opacity: 1;
+                                    transform: translateY(0px);
+                                }
+                            }
+                        }
+                    }
+
+                    .texto {}
+
+                    .texto-secciones {}
+
+                    .tag-destacado {
+                        flex-direction: column;
+
+                        .tag-destacado-izq {
+                            width: 100%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .tag-destacado-der {
                             width: 100%;
                         }
                     }
 
-                    .tag-destacado-der {
-                        width: 100%;
+                    .tag-3-destacados {
+                        flex-direction: column;
+
+                        .tag-3-camping {
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+
+                            img {
+                                width: 90%;
+                            }
+                        }
                     }
-                }
 
-                .tag-3-destacados {
-                    flex-direction: column;
+                    .tag-consejo {
+                        flex-direction: column;
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
 
-                    .tag-3-camping {
-                        margin-top: 20px;
-                        margin-bottom: 20px;
+                        .texto-secciones {
+                            h2 {}
 
-                        img {
-                            width: 90%;
+                            p {}
+                        }
+
+                        .img {
+                            width: 100%;
+                            border-radius: 10%;
+                            margin-bottom: 50px;
                         }
                     }
                 }
 
-                .tag-consejo {
+                .checklist {
+                    h2 {}
+
+                    ul {
+                        li {
+                            .item-img {}
+
+                            .tilde {}
+                        }
+                    }
+                }
+
+                .tag-2-consejos {
                     flex-direction: column;
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
+
+                    .tag-2-objetos {
+                        img {}
+
+                        .texto-objeto {
+                            h4 {}
+
+                            p {}
+                        }
+                    }
+                }
+
+                h3 {}
+
+                .tag-iframe {
+                    margin: auto;
+                    padding: auto;
+                    padding-top: 0px;
+                    display: flex;
+                    flex-direction: row;
+
+                    .iframe {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+
+                        h4 {
+                            text-align: center;
+                            padding-top: 0px;
+                            background-color: #fff;
+                        }
+
+                        iframe {
+                            width: 100%;
+
+                        }
+                    }
 
                     .texto-secciones {
-                        h2 {}
-
-                        p {}
-                    }
-
-                    .img {
-                        width: 100%;
-                        border-radius: 10%;
-                        margin-bottom: 50px;
-                    }
-                }
-            }
-
-            .checklist {
-                h2 {}
-
-                ul {
-                    li {
-                        .item-img {}
-
-                        .tilde {}
-                    }
-                }
-            }
-
-            .tag-2-consejos {
-                flex-direction: column;
-
-                .tag-2-objetos {
-                    img {}
-
-                    .texto-objeto {
-                        h4 {}
-
-                        p {}
-                    }
-                }
-            }
-
-            h3 {}
-
-            .tag-iframe {
-                margin: auto;
-                padding: auto;
-                padding-top: 50px;
-                display: flex;
-                flex-direction: row;
-
-                .iframe {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-
-                    h4 {
-                        text-align: center;
-                        padding-top: 0px;
-                        background-color: #fff;
-                    }
-
-                    iframe {
-                        width: 100%;
-
+                        display: none;
                     }
                 }
 
                 .texto-secciones {
-                    display: none;
-                }
-            }
-
-            .texto-secciones {
-                h4 {}
-
-                p {}
-            }
-
-            h3 {}
-
-            .tag-destacado {
-                .texto-destacado {
-                    h3 {}
+                    h4 {}
 
                     p {}
                 }
 
-                .img-tag-destacado {
-                    width: 100%;
+                h3 {}
 
-                    img {
-                        margin: auto;
+                .tag-destacado {
+                    .texto-destacado {
+                        h3 {}
+
+                        p {}
+                    }
+
+                    .img-tag-destacado {
                         width: 100%;
-                        border-radius: 8%;
+
+                        img {
+                            margin: auto;
+                            width: 100%;
+                            border-radius: 8%;
+                        }
                     }
                 }
-            }
 
 
-            .formulario {
-                flex-direction: column;
+                .formulario {
+                    flex-direction: column;
 
-                .formulario-izq {
-                    width: 100px;
-                }
+                    .formulario-izq {
+                        width: 100px;
+                    }
 
-                .formulario-der {
-                    width: 100%;
-                }
-            }
-
-        }
-
-
-        .aside {
-            justify-content: space-evenly;
-            grid-area: aside;
-            border-left: none;
-            border-bottom: #232f3c solid;
-        }
-
-        .footer {
-            display: none;
-            width: 100%;
-            grid-area: footer;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(0, 119, 149);
-            border-top: #232f3c solid 2px;
-
-            .footer1 {
-                text-align: center;
-
-                .h2 {
-                    color: white;
-                    font-size: 2.5rem;
-                    margin-top: 0px;
-                    margin-bottom: 40px;
-                }
-
-                .logo {
-                    width: 120px;
-                    border-radius: 100%;
-
-                    img {
-                        text-align: center;
+                    .formulario-der {
+                        width: 100%;
                     }
                 }
+
             }
 
-            .footer2 {
+
+            .aside {
+                justify-content: space-evenly;
+                grid-area: aside;
+                border-left: none;
+                border-bottom: #232f3c solid;
+            }
+
+            .footer {
                 display: none;
-            }
+                width: 100%;
+                grid-area: footer;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(0, 119, 149);
+                border-top: #232f3c solid 2px;
 
-            .footer3 {
-                text-align: center;
+                .footer1 {
+                    text-align: center;
 
-                a {
-                    img {
-                        width: 70px;
-                        padding: 10px;
-                        border-radius: 40%;
+                    .h2 {
+                        color: white;
+                        font-size: 2.5rem;
+                        margin-top: 0px;
+                        margin-bottom: 40px;
+                    }
+
+                    .logo {
+                        width: 120px;
+                        border-radius: 100%;
+
+                        img {
+                            text-align: center;
+                        }
                     }
                 }
 
+                .footer2 {
+                    display: none;
+                }
+
+                .footer3 {
+                    text-align: center;
+
+                    a {
+                        img {
+                            width: 70px;
+                            padding: 10px;
+                            border-radius: 40%;
+                        }
+                    }
+
+                }
             }
         }
     }

@@ -25,6 +25,12 @@
                     @extend .h5-comun;
                 }
 
+                img {
+                    padding: 0;
+                    border: $borde solid 1px;
+                    border-radius: 5%
+                }
+
                 p {
                     @extend .p-comun;
                 }
@@ -39,7 +45,6 @@
 
                     .volver {
                         display: flex;
-
 
                         .boton {
                             @include boton-estilo;
@@ -60,6 +65,7 @@
                     @extend .h5-comun;
                     background-color: $letra-columna;
                     color: white;
+                    padding-bottom: 15px;
                 }
 
                 .tabla-caract {
@@ -68,15 +74,18 @@
 
                     tr {
 
+
                         th {
+                            text-align: left;
                             color: $letra-columna;
                             background-color: $borde;
-                            padding: 5px;
-                            margin-bottom: 10px;
+                            padding: 10px;
                         }
 
                         td {
                             padding: 10px;
+                            font-weight: bold;
+                            background-color: #abf9dd;
                         }
                     }
                 }
@@ -105,6 +114,7 @@
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 
                 &:hover {
+                    box-shadow: 0 4px 8px $borde;
                     background-color: darken($fondo-camping, 10%);
                     transform: scale(1.05);
                 }

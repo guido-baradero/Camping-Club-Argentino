@@ -35,6 +35,7 @@
 .texto-secciones {
     h4 {
         @extend .h4-comun;
+        padding-top: 50px
     }
 
     p {
