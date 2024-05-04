@@ -207,6 +207,51 @@ main {
   padding-bottom: 36px;
 }
 
+.hero-section {
+  width: 100%;
+  height: 800px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  padding-bottom: 200px;
+  background-image: url(../img/estilo/hero-section.jpg);
+  background-size: cover;
+}
+.hero-section .texto-hero-section .pregunta {
+  opacity: 0;
+  text-align: left;
+  padding-top: 100px;
+  color: white;
+  font-size: 6rem;
+  animation: aparecer-pregunta 1s ease-in-out forwards 2s;
+}
+.hero-section .texto-hero-section .respuesta {
+  color: white;
+  font-size: 3rem;
+  opacity: 0;
+  animation: aparecer-respuesta 1s ease-in-out forwards 3s;
+}
+@keyframes aparecer-pregunta {
+  from {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(250px);
+  }
+}
+@keyframes aparecer-respuesta {
+  from {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 .tag-destacado {
   display: flex;
   align-items: center;
