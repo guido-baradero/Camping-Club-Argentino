@@ -1,5 +1,67 @@
-.principal .texto-secciones h3 {
+.h2-comun, .tag-consejo .texto-secciones h2, .tag-3-destacados .tag-3-camping .texto-secciones h2, .principal h2,
+.texto h2,
+.texto-secciones h2 {
   padding-bottom: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.h3-comun, .formulario .formulario-der h3, .formulario .formulario-izq h3, .tag-destacado h3, .tag-3-destacados .tag-3-camping .texto-secciones h3, .tag-destacado .tag-destacado-izq h3, .principal h3,
+.texto h3,
+.texto-secciones h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.h4-comun, .texto-secciones h4, .tag-iframe .texto-secciones h4, .tag-iframe .iframe h4, .tag-2-consejos .tag-2-objetos .texto-objeto h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.h5-comun, .aside .aside1 h5, .tag-destacado .tag-destacado-der h5, .tag-destacado .tag-destacado-izq h5 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 20px 0 0 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.p-comun, .formulario .formulario-izq p, .tag-destacado p, .tag-iframe .texto-secciones p, .tag-2-consejos .tag-2-objetos .texto-objeto p, .tag-consejo .texto-secciones p, .tag-3-destacados .tag-3-camping .texto-secciones p, .tag-destacado .tag-destacado-izq p, .principal p,
+.texto p,
+.texto-secciones p {
+  margin: 10px;
+  padding: 8px;
+  text-align: center;
+}
+
+.p-autor, .footer .footer1 p {
+  font-size: 0.5rem;
+  color: #91aac5;
+}
+
+.campo, .formulario .formulario-der form {
+  padding: 10px;
+  text-align: right;
+}
+.campo label, .formulario .formulario-der form label {
+  text-align: left;
+}
+.campo input, .formulario .formulario-der form input {
+  text-align: right;
+}
+.campo select, .formulario .formulario-der form select {
+  background-color: #90d3bb;
+}
+.campo select option, .formulario .formulario-der form select option {
+  background-color: #9f7171;
+  color: white;
+}
+.campo textarea, .formulario .formulario-der form textarea {
+  font-size: small;
 }
 
 .tag-destacado-izq img {
@@ -60,66 +122,6 @@
   border-radius: 40%;
 }
 
-.h2-comun, .tag-consejo .texto-secciones h2, .tag-3-destacados .tag-3-camping .texto-secciones h2, .principal h2, .principal .texto h2, .principal .texto-secciones h2 {
-  padding-bottom: 50px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.h3-comun, .formulario .formulario-der h3, .formulario .formulario-izq h3, .tag-destacado h3, .tag-3-destacados .tag-3-camping .texto-secciones h3, .tag-destacado .tag-destacado-izq h3, .principal h3, .principal .texto h3, .principal .texto-secciones h3 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 1.8rem;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.h4-comun, .texto-secciones h4, .tag-iframe .texto-secciones h4, .tag-iframe .iframe h4, .tag-2-consejos .tag-2-objetos .texto-objeto h4 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.h5-comun, .aside .aside1 h5, .tag-destacado .tag-destacado-der h5, .tag-destacado .tag-destacado-izq h5 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: 20px 0 0 20px;
-  width: 100%;
-  text-align: center;
-  font-size: 1.8rem;
-}
-
-.p-comun, .formulario .formulario-izq p, .tag-destacado p, .texto-secciones p, .tag-iframe .texto-secciones p, .tag-2-consejos .tag-2-objetos .texto-objeto p, .tag-consejo .texto-secciones p, .tag-3-destacados .tag-3-camping .texto-secciones p, .tag-destacado .tag-destacado-izq p, .principal p, .principal .texto p, .principal .texto-secciones p {
-  margin: 10px;
-  padding: 8px;
-  text-align: center;
-}
-
-.p-autor, .footer .footer1 p {
-  font-size: 0.5rem;
-  color: #91aac5;
-}
-
-.campo, .formulario .formulario-der form {
-  padding: 10px;
-  text-align: right;
-}
-.campo label, .formulario .formulario-der form label {
-  text-align: left;
-}
-.campo input, .formulario .formulario-der form input {
-  text-align: right;
-}
-.campo select, .formulario .formulario-der form select {
-  background-color: #90d3bb;
-}
-.campo select option, .formulario .formulario-der form select option {
-  background-color: #9f7171;
-  color: white;
-}
-.campo textarea, .formulario .formulario-der form textarea {
-  font-size: small;
-}
-
 .contenedor {
   background-color: #fff;
   margin: 0;
@@ -148,38 +150,6 @@
     padding-bottom: 0px;
     margin-bottom: 0px;
     max-width: 100%;
-    /*.menu {
-        //display: none;
-        width: 100%;
-        text-align: center;
-        display: flex;
-        align-items: baseline;
-
-        ul {
-            text-align: center;
-            display: flex;
-            align-items: baseline;
-            margin: 0;
-            padding: 0;
-            margin-bottom: 20px;
-            width: 100%;
-
-            li {
-                display: flex;
-                align-items: baseline;
-                //text-align: center;
-
-                a {
-                    //text-align: center;
-                    padding: 15px;
-                    margin: auto;
-                    width: 100%;
-                    font-weight: bold;
-                    font-size: 1rem;
-                }
-            }
-        }
-    }*/
   }
   body .contenedor .header .titulo {
     width: 100%;
@@ -228,6 +198,20 @@
     background-image: url(../img/estilo/hero-section.jpg);
     background-size: cover;
   }
+  body .contenedor .main .principal .hero-section .texto-hero-section {
+    /*
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }*/
+  }
   body .contenedor .main .principal .hero-section .texto-hero-section .pregunta {
     padding: 0;
     font-size: 3rem;
@@ -242,16 +226,6 @@
     }
     100% {
       opacity: 1;
-    }
-  }
-  @keyframes aparecer {
-    from {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0px);
     }
   }
   body .contenedor .main .principal .tag-destacado {
@@ -305,7 +279,7 @@
   body .contenedor .main .tag-iframe .iframe h4 {
     text-align: center;
     padding-top: 0px;
-    background-color: #fff;
+    background-color: white;
   }
   body .contenedor .main .tag-iframe .iframe iframe {
     width: 100%;
@@ -323,20 +297,29 @@
   }
   body .contenedor .main .formulario {
     flex-direction: column;
+    padding-top: 50px;
   }
   body .contenedor .main .formulario .formulario-izq {
     width: 100px;
+    text-align: center;
   }
   body .contenedor .main .formulario .formulario-der {
     width: 100%;
+    text-align: center;
   }
-  body .contenedor .aside {
+  body .contenedor .main .formulario .formulario-der form {
+    width: 100%;
+  }
+  body .contenedor .main .formulario .formulario-der form .campo, body .contenedor .main .formulario .formulario-der form form {
+    text-align: center;
+  }
+  body .contenedor .main .aside {
     justify-content: space-evenly;
     grid-area: aside;
     border-left: none;
     border-bottom: #232f3c solid;
   }
-  body .contenedor .footer {
+  body .contenedor .main .footer {
     display: none;
     width: 100%;
     grid-area: footer;
@@ -347,29 +330,29 @@
     background-color: rgb(0, 119, 149);
     border-top: #232f3c solid 2px;
   }
-  body .contenedor .footer .footer1 {
+  body .contenedor .main .footer .footer1 {
     text-align: center;
   }
-  body .contenedor .footer .footer1 .h2 {
+  body .contenedor .main .footer .footer1 .h2 {
     color: white;
     font-size: 2.5rem;
     margin-top: 0px;
     margin-bottom: 40px;
   }
-  body .contenedor .footer .footer1 .logo {
+  body .contenedor .main .footer .footer1 .logo {
     width: 120px;
     border-radius: 100%;
   }
-  body .contenedor .footer .footer1 .logo img {
+  body .contenedor .main .footer .footer1 .logo img {
     text-align: center;
   }
-  body .contenedor .footer .footer2 {
+  body .contenedor .main .footer .footer2 {
     display: none;
   }
-  body .contenedor .footer .footer3 {
+  body .contenedor .main .footer .footer3 {
     text-align: center;
   }
-  body .contenedor .footer .footer3 a img {
+  body .contenedor .main .footer .footer3 a img {
     width: 70px;
     padding: 10px;
     border-radius: 40%;
@@ -469,7 +452,8 @@ main {
   animation: aparecer-pregunta 1s ease-in-out forwards 2s;
 }
 .hero-section .texto-hero-section .respuesta {
-  color: rgb(222, 91, 37);
+  color: white;
+  font-size: 3rem;
   opacity: 0;
   animation: aparecer-respuesta 1s ease-in-out forwards 3s;
 }
