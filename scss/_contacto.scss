@@ -25,6 +25,10 @@
     .formulario-der {
         padding: 20px;
 
+        .ocultar {
+            display: none;
+        }
+
         h3 {
             @extend .h3-comun;
         }

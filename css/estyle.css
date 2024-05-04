@@ -466,6 +466,9 @@ main {
 .formulario .formulario-der {
   padding: 20px;
 }
+.formulario .formulario-der .ocultar {
+  display: none;
+}
 .formulario .formulario-der form .grupo-boton {
   width: 100%;
 }
@@ -755,15 +758,15 @@ main {
   body .contenedor .main .principal .formulario .formulario-der h3 {
     display: none;
   }
-  body .contenedor .main .principal .formulario .formulario-der .div {
+  body .contenedor .main .principal .formulario .formulario-der .ocultar {
     display: flex;
     width: 50%;
     flex-direction: column;
     align-items: center;
   }
-  body .contenedor .main .principal .formulario .formulario-der .div img {
+  body .contenedor .main .principal .formulario .formulario-der .ocultar img {
     margin: auto;
-    width: 120px;
+    height: 500px;
   }
   body .contenedor .main .principal .formulario .formulario-der form {
     width: 50%;
