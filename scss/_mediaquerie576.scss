@@ -12,6 +12,8 @@
                 "aside"
                 "footer";
 
+            //HEADER
+
             .header {
                 flex-direction: column;
                 justify-content: space-between;
@@ -48,18 +50,19 @@
                     ul {
                         flex-direction: column;
                         text-align: center;
-                        background-color: $borde;
                         margin-bottom: 0;
 
                         li {
                             a {
-                                color: $color-aside1;
+                                color: $borde;
+                                font-weight: bold;
                             }
                         }
                     }
                 }
             }
 
+            //MAIN
             .main {
                 background-color: white;
                 grid-area: main;
@@ -234,18 +237,23 @@
                     //CONTACTO
                     .formulario {
                         flex-direction: column;
+                        padding: 0;
                         padding-top: 50px;
+                        max-width: 576px;
 
                         .formulario-izq {
                             width: 100%;
+                            padding: 0;
                             margin: auto;
 
                             h3 {
-                                width: 100%;
+                                //width: 80%;
+                                text-align: center;
                             }
 
                             p {
-                                width: 100%;
+                                //width: 100%;
+                                font-size: 1.6rem;
                             }
 
                             .medios-de-pago {
@@ -255,40 +263,80 @@
 
                         .formulario-der {
                             width: 100%;
-                            text-align: center;
-                            margin: auto;
+                            // text-align: center;
+                            //margin: auto;
                             display: flex;
 
                             h3 {
                                 display: none;
                             }
 
-                            .ocultar {
+                            /*  .ocultar {
                                 display: inline-block;
-                                width: 50%;
+                                width: 45%;
                                 flex-direction: column;
-                                align-items: center;
+                                align-items: end;
                                 margin: auto;
 
                                 img {
-                                    margin: auto;
-                                    height: 400px;
+                                    margin-left: 10px;
+                                    width: 120px;
                                 }
-                            }
+                            }*/
 
                             form {
-                                width: 50%;
-                                align-items: center;
+                                width: 100%;
+                                padding: 0;
+                                margin: auto;
+                                //align-items: end;
+                                text-align: justify;
 
                                 .campo {
-                                    width: 100%;
-                                    text-align: right;
-                                    margin: 0;
+
+                                    //width: 100%;
+                                    padding: 10px;
+                                    text-align: center;
+                                    margin: auto;
+                                    //display: flex;
+                                    // justify-content: center;
 
                                     label {
-                                        margin-left: 0;
-                                        text-align: left;
+                                        //margin-left: 0;
+                                        //text-align: left;
+                                        font-size: 1.6rem;
+                                        padding: 10px;
                                     }
+
+                                    input {
+                                        //width: 60%;
+                                        height: 40px;
+                                        text-align: right;
+                                        margin-left: 40px;
+                                    }
+
+                                    textarea {
+                                        font-size: 1.2rem;
+                                        opacity: 0.6;
+                                        width: 100%;
+                                        height: 150px;
+                                        //padding: 10px;
+                                    }
+
+                                    select {
+                                        font-size: 1.6rem;
+
+                                        option {
+                                            font-size: 1rem;
+                                        }
+                                    }
+                                }
+
+                                .campo-linea {
+                                    display: inline-block;
+                                    padding: 10px;
+                                    //text-align: center;
+                                    font-size: 1.6rem;
+                                    margin-right: 30px;
                                 }
                             }
                         }
@@ -320,11 +368,12 @@
                 .footer1 {
                     text-align: center;
 
-                    .h2 {
-                        color: white;
-                        font-size: 2.5rem;
-                        margin-top: 0px;
+                    h2 {
                         margin-bottom: 40px;
+                        font-size: 1.8rem;
+                        text-align: center;
+                        padding: 20px;
+                        margin: auto;
                     }
 
                     .logo {

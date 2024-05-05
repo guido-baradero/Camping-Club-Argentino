@@ -73,14 +73,18 @@
   padding-bottom: 20px;
 }
 
-.h4-comun, .texto-secciones h4, .tag-iframe .texto-secciones h4, .tag-iframe .iframe h4 {
+.h4-comun, .tag-iframe .texto-secciones h4, .tag-iframe .iframe h4, .principal h4,
+.texto h4,
+.texto-secciones h4 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.h5-comun, .aside .aside1 h5, .tag-destacado .tag-destacado-der h5 {
+.h5-comun, .aside .aside1 h5, .tag-destacado .tag-destacado-der h5, .principal h5,
+.texto h5,
+.texto-secciones h5 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 20px 0 0 20px;
   width: 100%;
@@ -678,11 +682,11 @@ main {
   body .contenedor .header .menu ul {
     flex-direction: column;
     text-align: center;
-    background-color: #232f3c;
     margin-bottom: 0;
   }
   body .contenedor .header .menu ul li a {
-    color: rgb(237, 164, 10);
+    color: #232f3c;
+    font-weight: bold;
   }
   body .contenedor .main {
     background-color: white;
@@ -806,53 +810,80 @@ main {
   }
   body .contenedor .main .principal .formulario {
     flex-direction: column;
+    padding: 0;
     padding-top: 50px;
+    max-width: 576px;
   }
   body .contenedor .main .principal .formulario .formulario-izq {
     width: 100%;
+    padding: 0;
     margin: auto;
   }
   body .contenedor .main .principal .formulario .formulario-izq h3 {
-    width: 100%;
+    text-align: center;
   }
   body .contenedor .main .principal .formulario .formulario-izq p {
-    width: 100%;
+    font-size: 1.6rem;
   }
   body .contenedor .main .principal .formulario .formulario-izq .medios-de-pago {
     margin: auto;
   }
   body .contenedor .main .principal .formulario .formulario-der {
     width: 100%;
-    text-align: center;
-    margin: auto;
     display: flex;
+    /*  .ocultar {
+        display: inline-block;
+        width: 45%;
+        flex-direction: column;
+        align-items: end;
+        margin: auto;
+
+        img {
+            margin-left: 10px;
+            width: 120px;
+        }
+    }*/
   }
   body .contenedor .main .principal .formulario .formulario-der h3 {
     display: none;
   }
-  body .contenedor .main .principal .formulario .formulario-der .ocultar {
-    display: inline-block;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-  }
-  body .contenedor .main .principal .formulario .formulario-der .ocultar img {
-    margin: auto;
-    height: 400px;
-  }
   body .contenedor .main .principal .formulario .formulario-der form {
-    width: 50%;
-    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    text-align: justify;
   }
   body .contenedor .main .principal .formulario .formulario-der form .campo, body .contenedor .main .principal .formulario .formulario-der form form {
-    width: 100%;
-    text-align: right;
-    margin: 0;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
   }
   body .contenedor .main .principal .formulario .formulario-der form .campo label, body .contenedor .main .principal .formulario .formulario-der form form label {
-    margin-left: 0;
-    text-align: left;
+    font-size: 1.6rem;
+    padding: 10px;
+  }
+  body .contenedor .main .principal .formulario .formulario-der form .campo input, body .contenedor .main .principal .formulario .formulario-der form form input {
+    height: 40px;
+    text-align: right;
+    margin-left: 40px;
+  }
+  body .contenedor .main .principal .formulario .formulario-der form .campo textarea, body .contenedor .main .principal .formulario .formulario-der form form textarea {
+    font-size: 1.2rem;
+    opacity: 0.6;
+    width: 100%;
+    height: 150px;
+  }
+  body .contenedor .main .principal .formulario .formulario-der form .campo select, body .contenedor .main .principal .formulario .formulario-der form form select {
+    font-size: 1.6rem;
+  }
+  body .contenedor .main .principal .formulario .formulario-der form .campo select option, body .contenedor .main .principal .formulario .formulario-der form form select option {
+    font-size: 1rem;
+  }
+  body .contenedor .main .principal .formulario .formulario-der form .campo-linea {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.6rem;
+    margin-right: 30px;
   }
   body .contenedor .aside {
     justify-content: space-evenly;
@@ -873,11 +904,12 @@ main {
   body .contenedor .footer .footer1 {
     text-align: center;
   }
-  body .contenedor .footer .footer1 .h2 {
-    color: white;
-    font-size: 2.5rem;
-    margin-top: 0px;
+  body .contenedor .footer .footer1 h2 {
     margin-bottom: 40px;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
   }
   body .contenedor .footer .footer1 .logo {
     width: 120px;
