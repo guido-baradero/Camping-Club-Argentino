@@ -236,84 +236,72 @@
 
                     //CONTACTO
                     .formulario {
+
                         flex-direction: column;
-                        padding: 0;
-                        padding-top: 50px;
-                        max-width: 576px;
+                        padding: 50px 0px 50px 0px;
+                        max-width: 100%;
+                        margin: auto;
+                        border: none;
+                        //                        display: none;
 
                         .formulario-izq {
+
                             width: 100%;
                             padding: 0;
-                            margin: auto;
+
 
                             h3 {
-                                //width: 80%;
+                                width: 100%;
                                 text-align: center;
+                                padding: 0;
                             }
 
                             p {
-                                //width: 100%;
+                                width: 100%;
                                 font-size: 1.6rem;
+                                padding: 10px 0px 10px 0px;
+                                margin: 0;
                             }
 
                             .medios-de-pago {
+                                display: none;
+                                max-width: 90%;
                                 margin: auto;
+
+                                img {
+                                    width: 100%;
+                                }
                             }
                         }
 
                         .formulario-der {
-                            width: 100%;
-                            // text-align: center;
-                            //margin: auto;
-                            display: flex;
+                            width: 96%;
+                            padding: 0;
+                            margin: auto;
 
                             h3 {
                                 display: none;
                             }
 
-                            /*  .ocultar {
-                                display: inline-block;
-                                width: 45%;
-                                flex-direction: column;
-                                align-items: end;
-                                margin: auto;
-
-                                img {
-                                    margin-left: 10px;
-                                    width: 120px;
-                                }
-                            }*/
-
                             form {
-                                width: 100%;
                                 padding: 0;
                                 margin: auto;
-                                //align-items: end;
                                 text-align: justify;
 
                                 .campo {
-
-
-                                    //width: 100%;
                                     padding: 10px;
                                     text-align: center;
                                     margin: auto;
-                                    //display: flex;
-                                    // justify-content: center;
 
                                     label {
-                                        //margin-left: 0;
-                                        //text-align: left;
                                         font-size: 1.6rem;
                                         padding: 10px;
                                     }
 
                                     input {
-                                        //width: 60%;
                                         height: 40px;
-                                        //text-align: right;
-                                        //margin-left: 40px;
                                         width: 100%;
+                                        font-size: 1.6rem;
                                     }
 
                                     textarea {
@@ -321,11 +309,9 @@
                                         opacity: 0.6;
                                         width: 100%;
                                         height: 150px;
-                                        //padding: 10px;
                                     }
 
                                     select {
-                                        //display: none;
                                         font-size: 1.6rem;
                                         background-color: white;
                                         width: 100%;
@@ -338,12 +324,8 @@
                                 }
 
                                 .campo-linea {
-                                    //display: none;
-                                    //display: inline-block;
                                     padding: 10px;
-                                    //text-align: center;
                                     font-size: 1.6rem;
-                                    //margin-right: 30px;
                                     width: 100%;
                                 }
                             }
