@@ -1,8 +1,18 @@
+//@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
 @import "variables";
+
+
+//@import "variablesBootstrap";
+
 @import "imagenes";
 @import "mixins";
 @import "estilosComunes";
 @import "animaciones";
+@import "navegacion";
 @import "grilla";
 @import "body.scss";
 @import "main.scss";
@@ -14,4 +24,4 @@
 @import "contacto";
 @import "aside";
 @import "footer";
-@import "mediaquerie576.scss";
+@import "mediaquerie576";
