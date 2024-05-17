@@ -1,23 +1,18 @@
-//@import "../node_modules/bootstrap/scss/bootstrap";
-
-
-
-
 @import "variables";
-
-
-//@import "variablesBootstrap";
-
-@import "imagenes";
 @import "mixins";
-@import "estilosComunes";
-@import "animaciones";
-@import "navegacion";
+@import "reset.scss";
+
 @import "grilla";
-@import "body.scss";
-@import "main.scss";
+
 @import "header";
+@import "main";
+@import "navegacion";
+@import "animaciones";
 @import "hero-section";
+
+@import "estilosComunes";
+@import "imagenes";
+
 @import "tagsDestinos";
 @import "tagsConsejos";
 @import "motorhome";
