@@ -86,10 +86,6 @@ main {
   padding-top: 0;
 }
 
-.navbar {
-  background-color: aqua;
-}
-
 @keyframes aparecer-pregunta {
   from {
     opacity: 0;
